@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* ODataOrgDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ODataOrgDemoAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		8530B3DE1333190900920247 /* libMSODataLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8530B3B3133317F300920247 /* libMSODataLib.a */; };
+		EDB1B97A13B87738005EDC2E /* DemoService.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB1B97813B87738005EDC2E /* DemoService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8530B3B2133317F300920247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8530B3AB133317F300920247 /* MSODataLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MSODataLib;
+		};
+		8530B3D2133318D900920247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8530B3AB133317F300920247 /* MSODataLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MSODataLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ODataOrgDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODataOrgDemoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ODataOrgDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODataOrgDemoAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ODataOrgDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODataOrgDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* ODataOrgDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODataOrgDemo_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CCFA616132B18A90083AEEF /* ACSCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACSCredential.h; path = Include/ACSCredential.h; sourceTree = "<group>"; };
+		7CCFA617132B18A90083AEEF /* ACSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACSUtil.h; path = Include/ACSUtil.h; sourceTree = "<group>"; };
+		7CCFA618132B18A90083AEEF /* ACSUtilException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACSUtilException.h; path = Include/ACSUtilException.h; sourceTree = "<group>"; };
+		7CCFA619132B18A90083AEEF /* AtomEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomEntry.h; path = Include/AtomEntry.h; sourceTree = "<group>"; };
+		7CCFA61A132B18A90083AEEF /* AtomParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomParser.h; path = Include/AtomParser.h; sourceTree = "<group>"; };
+		7CCFA61B132B18A90083AEEF /* AzureTableCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AzureTableCredential.h; path = Include/AzureTableCredential.h; sourceTree = "<group>"; };
+		7CCFA61C132B18A90083AEEF /* AzureTableUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AzureTableUtil.h; path = Include/AzureTableUtil.h; sourceTree = "<group>"; };
+		7CCFA61D132B18A90083AEEF /* ClientType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientType.h; path = Include/ClientType.h; sourceTree = "<group>"; };
+		7CCFA61E132B18A90083AEEF /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constants.h; path = Include/constants.h; sourceTree = "<group>"; };
+		7CCFA61F132B18A90083AEEF /* ContentStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentStream.h; path = Include/ContentStream.h; sourceTree = "<group>"; };
+		7CCFA620132B18A90083AEEF /* CredentialBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CredentialBase.h; path = Include/CredentialBase.h; sourceTree = "<group>"; };
+		7CCFA621132B18A90083AEEF /* CredentialType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CredentialType.h; path = Include/CredentialType.h; sourceTree = "<group>"; };
+		7CCFA622132B18A90083AEEF /* DataServiceQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataServiceQuery.h; path = Include/DataServiceQuery.h; sourceTree = "<group>"; };
+		7CCFA623132B18A90083AEEF /* DataServiceQueryContinuation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataServiceQueryContinuation.h; path = Include/DataServiceQueryContinuation.h; sourceTree = "<group>"; };
+		7CCFA624132B18A90083AEEF /* DataServiceRequestArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataServiceRequestArgs.h; path = Include/DataServiceRequestArgs.h; sourceTree = "<group>"; };
+		7CCFA625132B18A90083AEEF /* DataServiceRequestException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataServiceRequestException.h; path = Include/DataServiceRequestException.h; sourceTree = "<group>"; };
+		7CCFA626132B18A90083AEEF /* DataServiceResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataServiceResponse.h; path = Include/DataServiceResponse.h; sourceTree = "<group>"; };
+		7CCFA627132B18A90083AEEF /* DataServiceSaveStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataServiceSaveStream.h; path = Include/DataServiceSaveStream.h; sourceTree = "<group>"; };
+		7CCFA628132B18A90083AEEF /* DataServiceStreamResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataServiceStreamResponse.h; path = Include/DataServiceStreamResponse.h; sourceTree = "<group>"; };
+		7CCFA629132B18A90083AEEF /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dictionary.h; path = Include/Dictionary.h; sourceTree = "<group>"; };
+		7CCFA62A132B18A90083AEEF /* HTTPHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPHandler.h; path = Include/HTTPHandler.h; sourceTree = "<group>"; };
+		7CCFA62B132B18A90083AEEF /* HTTPHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPHeaders.h; path = Include/HTTPHeaders.h; sourceTree = "<group>"; };
+		7CCFA62C132B18A90083AEEF /* HttpProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpProxy.h; path = Include/HttpProxy.h; sourceTree = "<group>"; };
+		7CCFA62D132B18A90083AEEF /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpRequest.h; path = Include/HttpRequest.h; sourceTree = "<group>"; };
+		7CCFA62E132B18A90083AEEF /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpResponse.h; path = Include/HttpResponse.h; sourceTree = "<group>"; };
+		7CCFA62F132B18A90083AEEF /* mProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mProperties.h; path = Include/mProperties.h; sourceTree = "<group>"; };
+		7CCFA630132B18A90083AEEF /* MSODataResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSODataResponseDelegate.h; path = Include/MSODataResponseDelegate.h; sourceTree = "<group>"; };
+		7CCFA631132B18A90083AEEF /* ObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectContext.h; path = Include/ObjectContext.h; sourceTree = "<group>"; };
+		7CCFA632132B18A90083AEEF /* ObjectContextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectContextDelegate.h; path = Include/ObjectContextDelegate.h; sourceTree = "<group>"; };
+		7CCFA633132B18A90083AEEF /* ODataBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataBool.h; path = Include/ODataBool.h; sourceTree = "<group>"; };
+		7CCFA634132B18A90083AEEF /* ODataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataDelegate.h; path = Include/ODataDelegate.h; sourceTree = "<group>"; };
+		7CCFA635132B18A90083AEEF /* ODataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataEntity.h; path = Include/ODataEntity.h; sourceTree = "<group>"; };
+		7CCFA636132B18A90083AEEF /* ODataGUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataGUID.h; path = Include/ODataGUID.h; sourceTree = "<group>"; };
+		7CCFA637132B18A90083AEEF /* ODataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataObject.h; path = Include/ODataObject.h; sourceTree = "<group>"; };
+		7CCFA638132B18A90083AEEF /* ODataRTTI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataRTTI.h; path = Include/ODataRTTI.h; sourceTree = "<group>"; };
+		7CCFA639132B18A90083AEEF /* ODataServiceException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataServiceException.h; path = Include/ODataServiceException.h; sourceTree = "<group>"; };
+		7CCFA63A132B18A90083AEEF /* ODataSVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataSVC.h; path = Include/ODataSVC.h; sourceTree = "<group>"; };
+		7CCFA63B132B18A90083AEEF /* ODataXMLElements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataXMLElements.h; path = Include/ODataXMLElements.h; sourceTree = "<group>"; };
+		7CCFA63C132B18A90083AEEF /* ODataXMlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODataXMlParser.h; path = Include/ODataXMlParser.h; sourceTree = "<group>"; };
+		7CCFA63D132B18A90083AEEF /* OperationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OperationResponse.h; path = Include/OperationResponse.h; sourceTree = "<group>"; };
+		7CCFA63E132B18A90083AEEF /* Pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pair.h; path = Include/Pair.h; sourceTree = "<group>"; };
+		7CCFA63F132B18A90083AEEF /* QueryComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueryComponents.h; path = Include/QueryComponents.h; sourceTree = "<group>"; };
+		7CCFA640132B18A90083AEEF /* QueryOperationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueryOperationResponse.h; path = Include/QueryOperationResponse.h; sourceTree = "<group>"; };
+		7CCFA641132B18A90083AEEF /* RelatedEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RelatedEnd.h; path = Include/RelatedEnd.h; sourceTree = "<group>"; };
+		7CCFA642132B18A90083AEEF /* ResourceBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceBox.h; path = Include/ResourceBox.h; sourceTree = "<group>"; };
+		7CCFA643132B18A90083AEEF /* SaveResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaveResult.h; path = Include/SaveResult.h; sourceTree = "<group>"; };
+		7CCFA644132B18A90083AEEF /* TableEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableEntry.h; path = Include/TableEntry.h; sourceTree = "<group>"; };
+		7CCFA645132B18A90083AEEF /* Tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tables.h; path = Include/Tables.h; sourceTree = "<group>"; };
+		7CCFA646132B18A90083AEEF /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = Include/Utility.h; sourceTree = "<group>"; };
+		7CCFA647132B18A90083AEEF /* WindowsCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WindowsCredential.h; path = Include/WindowsCredential.h; sourceTree = "<group>"; };
+		7CCFA648132B18A90083AEEF /* XMLBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLBuilder.h; path = Include/XMLBuilder.h; sourceTree = "<group>"; };
+		7CCFA649132B18A90083AEEF /* XMLGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLGenerator.h; path = Include/XMLGenerator.h; sourceTree = "<group>"; };
+		7CCFA64A132B18A90083AEEF /* XMLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLHandler.h; path = Include/XMLHandler.h; sourceTree = "<group>"; };
+		8530B3AB133317F300920247 /* MSODataLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MSODataLib.xcodeproj; path = ../../../framework/src/MSODataLib/MSODataLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* ODataOrgDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ODataOrgDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		EDB1B97813B87738005EDC2E /* DemoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoService.m; sourceTree = "<group>"; };
+		EDB1B97913B87738005EDC2E /* DemoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoService.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				8530B3DE1333190900920247 /* libMSODataLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				EDB1B97813B87738005EDC2E /* DemoService.m */,
+				EDB1B97913B87738005EDC2E /* DemoService.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* ODataOrgDemoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ODataOrgDemoAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ODataOrgDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				8530B3AB133317F300920247 /* MSODataLib.xcodeproj */,
+				7CCFA615132B187E0083AEEF /* Include */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* ODataOrgDemo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ODataOrgDemo-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CCFA615132B187E0083AEEF /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				7CCFA616132B18A90083AEEF /* ACSCredential.h */,
+				7CCFA617132B18A90083AEEF /* ACSUtil.h */,
+				7CCFA618132B18A90083AEEF /* ACSUtilException.h */,
+				7CCFA619132B18A90083AEEF /* AtomEntry.h */,
+				7CCFA61A132B18A90083AEEF /* AtomParser.h */,
+				7CCFA61B132B18A90083AEEF /* AzureTableCredential.h */,
+				7CCFA61C132B18A90083AEEF /* AzureTableUtil.h */,
+				7CCFA61D132B18A90083AEEF /* ClientType.h */,
+				7CCFA61E132B18A90083AEEF /* constants.h */,
+				7CCFA61F132B18A90083AEEF /* ContentStream.h */,
+				7CCFA620132B18A90083AEEF /* CredentialBase.h */,
+				7CCFA621132B18A90083AEEF /* CredentialType.h */,
+				7CCFA622132B18A90083AEEF /* DataServiceQuery.h */,
+				7CCFA623132B18A90083AEEF /* DataServiceQueryContinuation.h */,
+				7CCFA624132B18A90083AEEF /* DataServiceRequestArgs.h */,
+				7CCFA625132B18A90083AEEF /* DataServiceRequestException.h */,
+				7CCFA626132B18A90083AEEF /* DataServiceResponse.h */,
+				7CCFA627132B18A90083AEEF /* DataServiceSaveStream.h */,
+				7CCFA628132B18A90083AEEF /* DataServiceStreamResponse.h */,
+				7CCFA629132B18A90083AEEF /* Dictionary.h */,
+				7CCFA62A132B18A90083AEEF /* HTTPHandler.h */,
+				7CCFA62B132B18A90083AEEF /* HTTPHeaders.h */,
+				7CCFA62C132B18A90083AEEF /* HttpProxy.h */,
+				7CCFA62D132B18A90083AEEF /* HttpRequest.h */,
+				7CCFA62E132B18A90083AEEF /* HttpResponse.h */,
+				7CCFA62F132B18A90083AEEF /* mProperties.h */,
+				7CCFA630132B18A90083AEEF /* MSODataResponseDelegate.h */,
+				7CCFA631132B18A90083AEEF /* ObjectContext.h */,
+				7CCFA632132B18A90083AEEF /* ObjectContextDelegate.h */,
+				7CCFA633132B18A90083AEEF /* ODataBool.h */,
+				7CCFA634132B18A90083AEEF /* ODataDelegate.h */,
+				7CCFA635132B18A90083AEEF /* ODataEntity.h */,
+				7CCFA636132B18A90083AEEF /* ODataGUID.h */,
+				7CCFA637132B18A90083AEEF /* ODataObject.h */,
+				7CCFA638132B18A90083AEEF /* ODataRTTI.h */,
+				7CCFA639132B18A90083AEEF /* ODataServiceException.h */,
+				7CCFA63A132B18A90083AEEF /* ODataSVC.h */,
+				7CCFA63B132B18A90083AEEF /* ODataXMLElements.h */,
+				7CCFA63C132B18A90083AEEF /* ODataXMlParser.h */,
+				7CCFA63D132B18A90083AEEF /* OperationResponse.h */,
+				7CCFA63E132B18A90083AEEF /* Pair.h */,
+				7CCFA63F132B18A90083AEEF /* QueryComponents.h */,
+				7CCFA640132B18A90083AEEF /* QueryOperationResponse.h */,
+				7CCFA641132B18A90083AEEF /* RelatedEnd.h */,
+				7CCFA642132B18A90083AEEF /* ResourceBox.h */,
+				7CCFA643132B18A90083AEEF /* SaveResult.h */,
+				7CCFA644132B18A90083AEEF /* TableEntry.h */,
+				7CCFA645132B18A90083AEEF /* Tables.h */,
+				7CCFA646132B18A90083AEEF /* Utility.h */,
+				7CCFA647132B18A90083AEEF /* WindowsCredential.h */,
+				7CCFA648132B18A90083AEEF /* XMLBuilder.h */,
+				7CCFA649132B18A90083AEEF /* XMLGenerator.h */,
+				7CCFA64A132B18A90083AEEF /* XMLHandler.h */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		8530B3AC133317F300920247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8530B3B3133317F300920247 /* libMSODataLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ODataOrgDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ODataOrgDemo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8530B3D3133318D900920247 /* PBXTargetDependency */,
+			);
+			name = ODataOrgDemo;
+			productName = ODataOrgDemo;
+			productReference = 1D6058910D05DD3D006BFB54 /* ODataOrgDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ODataOrgDemo" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8530B3AC133317F300920247 /* Products */;
+					ProjectRef = 8530B3AB133317F300920247 /* MSODataLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ODataOrgDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8530B3B3133317F300920247 /* libMSODataLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMSODataLib.a;
+			remoteRef = 8530B3B2133317F300920247 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ODataOrgDemoAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				EDB1B97A13B87738005EDC2E /* DemoService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8530B3D3133318D900920247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MSODataLib;
+			targetProxy = 8530B3D2133318D900920247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODataOrgDemo_Prefix.pch;
+				INFOPLIST_FILE = "ODataOrgDemo-Info.plist";
+				PRODUCT_NAME = ODataOrgDemo;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODataOrgDemo_Prefix.pch;
+				INFOPLIST_FILE = "ODataOrgDemo-Info.plist";
+				PRODUCT_NAME = ODataOrgDemo;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ODataOrgDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ODataOrgDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

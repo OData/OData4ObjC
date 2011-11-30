@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* ODataSampleAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ODataSampleAppAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		61280D2713E18DE100094A70 /* xmlFile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 61280D2613E18DE100094A70 /* xmlFile.xml */; };
+		6166D79013E2BA99008B3F2C /* addEmp1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6166D78F13E2BA99008B3F2C /* addEmp1.xml */; };
+		6166D79E13E2BAFB008B3F2C /* emp2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6166D79D13E2BAFB008B3F2C /* emp2.xml */; };
+		61A13E7513E2AA0A004C5C1C /* NorthwindEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A13E7313E2AA0A004C5C1C /* NorthwindEntities.m */; };
+		61A13EBC13E2B064004C5C1C /* retriveEmp.xml in Resources */ = {isa = PBXBuildFile; fileRef = 61A13EBB13E2B064004C5C1C /* retriveEmp.xml */; };
+		61A13EDE13E2B621004C5C1C /* emp1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 61A13EDD13E2B621004C5C1C /* emp1.xml */; };
+		61A13EE513E2B82C004C5C1C /* img1.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 61A13EE413E2B82C004C5C1C /* img1.bmp */; };
+		61A13EEE13E2B89A004C5C1C /* addEmp.xml in Resources */ = {isa = PBXBuildFile; fileRef = 61A13EED13E2B89A004C5C1C /* addEmp.xml */; };
+		61CDEBBA13D05DDF0082E9E7 /* electric-bass-guitar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61CDEBB913D05DDF0082E9E7 /* electric-bass-guitar.jpg */; };
+		61D29FDC13E024560059C221 /* lena1.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 61D29FDB13E024560059C221 /* lena1.bmp */; };
+		61D2A01213E025A20059C221 /* yoga1.png in Resources */ = {isa = PBXBuildFile; fileRef = 61D2A01113E025A20059C221 /* yoga1.png */; };
+		61E7E8BE13E7D8560023DC29 /* DemoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E7E8BC13E7D8560023DC29 /* DemoService.m */; };
+		637FE2F9117C326100F3947C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FE2F8117C326100F3947C /* RootViewController.m */; };
+		637FE47B117C3FB300F3947C /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FE47A117C3FB300F3947C /* DetailsViewController.m */; };
+		7CECE964132B0CFC00D16E11 /* libMSODataLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CECE963132B0CD600D16E11 /* libMSODataLib.a */; };
+		ED995FA013AB84D1002C9897 /* NetflixCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = ED995F9F13AB84D1002C9897 /* NetflixCatalog.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CECE962132B0CD600D16E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CECE959132B0CD600D16E11 /* MSODataLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = MSODataLib;
+		};
+		7CECE965132B0D4000D16E11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CECE959132B0CD600D16E11 /* MSODataLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = MSODataLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ODataSampleAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODataSampleAppAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ODataSampleAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODataSampleAppAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ODataSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODataSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ODataSampleApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODataSampleApp_Prefix.pch; sourceTree = "<group>"; };
+		61280D2613E18DE100094A70 /* xmlFile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xmlFile.xml; sourceTree = "<group>"; };
+		6166D78F13E2BA99008B3F2C /* addEmp1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = addEmp1.xml; sourceTree = "<group>"; };
+		6166D79D13E2BAFB008B3F2C /* emp2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = emp2.xml; sourceTree = "<group>"; };
+		61A13E7313E2AA0A004C5C1C /* NorthwindEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NorthwindEntities.m; path = ../../tweet_Sample/Classes/NorthwindEntities.m; sourceTree = SOURCE_ROOT; };
+		61A13E7413E2AA0A004C5C1C /* NorthwindEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NorthwindEntities.h; path = ../../tweet_Sample/Classes/NorthwindEntities.h; sourceTree = SOURCE_ROOT; };
+		61A13EBB13E2B064004C5C1C /* retriveEmp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = retriveEmp.xml; sourceTree = "<group>"; };
+		61A13EDD13E2B621004C5C1C /* emp1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = emp1.xml; sourceTree = "<group>"; };
+		61A13EE413E2B82C004C5C1C /* img1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = img1.bmp; sourceTree = "<group>"; };
+		61A13EED13E2B89A004C5C1C /* addEmp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = addEmp.xml; sourceTree = "<group>"; };
+		61CDEBB913D05DDF0082E9E7 /* electric-bass-guitar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "electric-bass-guitar.jpg"; sourceTree = "<group>"; };
+		61D29FDB13E024560059C221 /* lena1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = lena1.bmp; sourceTree = "<group>"; };
+		61D2A01113E025A20059C221 /* yoga1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoga1.png; sourceTree = "<group>"; };
+		61E7E8BC13E7D8560023DC29 /* DemoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoService.m; sourceTree = "<group>"; };
+		61E7E8BD13E7D8560023DC29 /* DemoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoService.h; sourceTree = "<group>"; };
+		637FE2F7117C326100F3947C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		637FE2F8117C326100F3947C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		637FE479117C3FB300F3947C /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		637FE47A117C3FB300F3947C /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		7CECE959132B0CD600D16E11 /* MSODataLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MSODataLib.xcodeproj; path = ../../../framework/src/MSODataLib/MSODataLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* ODataSampleApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ODataSampleApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		ED995F9E13AB84D1002C9897 /* NetflixCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetflixCatalog.h; sourceTree = "<group>"; };
+		ED995F9F13AB84D1002C9897 /* NetflixCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetflixCatalog.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				7CECE964132B0CFC00D16E11 /* libMSODataLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				61E7E8BC13E7D8560023DC29 /* DemoService.m */,
+				61E7E8BD13E7D8560023DC29 /* DemoService.h */,
+				61A13E7313E2AA0A004C5C1C /* NorthwindEntities.m */,
+				61A13E7413E2AA0A004C5C1C /* NorthwindEntities.h */,
+				ED995F9E13AB84D1002C9897 /* NetflixCatalog.h */,
+				ED995F9F13AB84D1002C9897 /* NetflixCatalog.m */,
+				1D3623240D0F684500981E51 /* ODataSampleAppAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ODataSampleAppAppDelegate.m */,
+				637FE2F7117C326100F3947C /* RootViewController.h */,
+				637FE2F8117C326100F3947C /* RootViewController.m */,
+				637FE479117C3FB300F3947C /* DetailsViewController.h */,
+				637FE47A117C3FB300F3947C /* DetailsViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ODataSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				7CECE959132B0CD600D16E11 /* MSODataLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				61A13EE413E2B82C004C5C1C /* img1.bmp */,
+				61D2A01113E025A20059C221 /* yoga1.png */,
+				61D29FDB13E024560059C221 /* lena1.bmp */,
+				61CDEBB913D05DDF0082E9E7 /* electric-bass-guitar.jpg */,
+				32CA4F630368D1EE00C91783 /* ODataSampleApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				61280D2613E18DE100094A70 /* xmlFile.xml */,
+				61A13EBB13E2B064004C5C1C /* retriveEmp.xml */,
+				61A13EDD13E2B621004C5C1C /* emp1.xml */,
+				61A13EED13E2B89A004C5C1C /* addEmp.xml */,
+				6166D78F13E2BA99008B3F2C /* addEmp1.xml */,
+				6166D79D13E2BAFB008B3F2C /* emp2.xml */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ODataSampleApp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CECE95A132B0CD600D16E11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CECE963132B0CD600D16E11 /* libMSODataLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ODataSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ODataSampleApp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CECE966132B0D4000D16E11 /* PBXTargetDependency */,
+			);
+			name = ODataSampleApp;
+			productName = ODataSampleApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* ODataSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ODataSampleApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7CECE95A132B0CD600D16E11 /* Products */;
+					ProjectRef = 7CECE959132B0CD600D16E11 /* MSODataLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ODataSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CECE963132B0CD600D16E11 /* libMSODataLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMSODataLib.a;
+			remoteRef = 7CECE962132B0CD600D16E11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				61CDEBBA13D05DDF0082E9E7 /* electric-bass-guitar.jpg in Resources */,
+				61D29FDC13E024560059C221 /* lena1.bmp in Resources */,
+				61D2A01213E025A20059C221 /* yoga1.png in Resources */,
+				61280D2713E18DE100094A70 /* xmlFile.xml in Resources */,
+				61A13EBC13E2B064004C5C1C /* retriveEmp.xml in Resources */,
+				61A13EDE13E2B621004C5C1C /* emp1.xml in Resources */,
+				61A13EE513E2B82C004C5C1C /* img1.bmp in Resources */,
+				61A13EEE13E2B89A004C5C1C /* addEmp.xml in Resources */,
+				6166D79013E2BA99008B3F2C /* addEmp1.xml in Resources */,
+				6166D79E13E2BAFB008B3F2C /* emp2.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ODataSampleAppAppDelegate.m in Sources */,
+				637FE2F9117C326100F3947C /* RootViewController.m in Sources */,
+				637FE47B117C3FB300F3947C /* DetailsViewController.m in Sources */,
+				ED995FA013AB84D1002C9897 /* NetflixCatalog.m in Sources */,
+				61A13E7513E2AA0A004C5C1C /* NorthwindEntities.m in Sources */,
+				61E7E8BE13E7D8560023DC29 /* DemoService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CECE966132B0D4000D16E11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MSODataLib;
+			targetProxy = 7CECE965132B0D4000D16E11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODataSampleApp_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib//**";
+				INFOPLIST_FILE = "ODataSampleApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib/build/Debug-iphonesimulator";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ODataSampleApp;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODataSampleApp_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../framework/bin/odatalib/include\"/**";
+				INFOPLIST_FILE = "ODataSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../framework/bin/odatalib/lib/iPhoneSimulatorLibs/iPhone_Simulator_4.0/Debug\"",
+					"\"$(SRCROOT)/../../../framework/bin/odatalib/lib/iPhoneSimulatorLibs/iPhone_Simulator_4.1/debug\"",
+					"\"$(SRCROOT)/../../../framework/src/MSODataLib/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../MSODataLib/build/Debug-iphonesimulator\"",
+					"\"$(SRCROOT)/../framework/src/MSODataLib/build/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ODataSampleApp;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib//**";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib/build/Debug-iphonesimulator";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ODataSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ODataSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
