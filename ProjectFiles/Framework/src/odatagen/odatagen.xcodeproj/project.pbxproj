@@ -195,7 +195,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = odatagen;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -214,7 +214,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = odatagen;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -228,7 +228,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /Developer/SDKs/MacOSX10.5.sdk/usr/include;
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -244,6 +244,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /Developer/SDKs/MacOSX10.5.sdk/usr/include;
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.7;
 				USER_HEADER_SEARCH_PATHS = "";
