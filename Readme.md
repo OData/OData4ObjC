@@ -3,7 +3,7 @@ Usage Instructions
 
 The SDK will run on Mac OSX machines only.
 
-Documentation on how to use the OData toolkit for Objective-C can be found in the User Manual under the Doc directory.
+Documentation on how to use the OData toolkit for Objective-C can be found in the [project web site](http://odata.github.com/OData4ObjC/).
 
 Getting Help
 ============
@@ -22,8 +22,6 @@ Fork and go. To contribute back, send us a pull request. Check out our [mileston
 Directory Structure
 ====================
 
-	|-- Doc		[Contains OData SDK for Objective-C User Guide]
-	|
 	|-- framework
 	|   |
 	|	|
