@@ -63,8 +63,8 @@
 
 @property (nonatomic, retain) NSMutableData *http_response;
 @property (nonatomic, retain) NSError * http_error;
-@property (nonatomic, retain,getter=getUsername,setter=setUsername) NSString *user_name;
-@property (nonatomic, retain,getter=getPassword,setter=setPassword) NSString *password;
+@property (nonatomic, retain,getter=getUsername,setter=setUsername:) NSString *user_name;
+@property (nonatomic, retain,getter=getPassword,setter=setPassword:) NSString *password;
 @property (nonatomic, assign) NSInteger http_status_code;
 @property (nonatomic, retain) NSMutableDictionary *http_response_headers;
 
