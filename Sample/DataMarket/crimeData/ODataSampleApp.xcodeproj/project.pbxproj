@@ -249,9 +249,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ODataSampleApp_Prefix.pch;
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib//**";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ODataSampleApp-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib/build/Debug-iphonesimulator";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ODataSampleApp;
 				SDKROOT = iphoneos;
@@ -265,12 +265,12 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ODataSampleApp_Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../framework/bin/odatalib/include\"/**";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Framework/bin/odatalib/include\"/**";
 				INFOPLIST_FILE = "ODataSampleApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../framework/bin/odatalib/lib/iPhoneSimulatorLibs/iPhone_Simulator_4.0/Debug\"",
+					"\"$(SRCROOT)/../../../Framework/bin/odatalib/lib/iPhoneSimulatorLibs/iPhone_Simulator_4.0/Debug\"",
 					"\"$(SRCROOT)/../../../framework/bin/odatalib/lib/iPhoneSimulatorLibs/iPhone_Simulator_4.1/debug\"",
 					"\"$(SRCROOT)/../../../framework/src/MSODataLib/build/Debug-iphonesimulator\"",
 					"\"$(SRCROOT)/../MSODataLib/build/Debug-iphonesimulator\"",
@@ -293,8 +293,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib//**";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../framework/src/MSODataLib/build/Debug-iphonesimulator";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../Framework/src/MSODataLib//**";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../Framework/src/MSODataLib/build/Debug-iphoneos";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
