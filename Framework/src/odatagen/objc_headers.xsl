@@ -82,7 +82,7 @@
 	</xsl:for-each>
 }
 <xsl:for-each select="schema_1_0:Property | schema_1_1:Property | schema_1_2:Property">
-    @property ( nonatomic , <xsl:if test="@Type = 'Edm.String'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: ) NSString *m_</xsl:if>
+@property ( nonatomic , <xsl:if test="@Type = 'Edm.String'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: ) NSString *m_</xsl:if>
     <xsl:if test="@Type = 'Edm.Int32'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
     <xsl:if test="@Type = 'Edm.Int16'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
     <xsl:if test="@Type = 'Edm.Int64'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
@@ -100,7 +100,7 @@
 <xsl:value-of select="@Name"/>;</xsl:for-each>
 
 <xsl:for-each select="schema_1_0:NavigationProperty | schema_1_1:NavigationProperty | schema_1_2:NavigationProperty">
-    @property ( nonatomic , retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSMutableArray *m_<xsl:value-of select="@Name"/>;</xsl:for-each>
+@property ( nonatomic , retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSMutableArray *m_<xsl:value-of select="@Name"/>;</xsl:for-each>
 
 + (id) Create<xsl:value-of select="@Name"/><xsl:if test="schema_1_0:Property[@Nullable = 'false'] | schema_1_1:Property[@Nullable = 'false'] | schema_1_2:Property[@Nullable = 'false']">With<xsl:for-each select="schema_1_0:Property[@Nullable = 'false'] | schema_1_1:Property[@Nullable = 'false'] | schema_1_2:Property[@Nullable = 'false']"><xsl:value-of select="translate(@Name, $uppercase, $smallcase)"/>:(<xsl:if test="@Type = 'Edm.String'">NSString *</xsl:if><xsl:if test="@Type = 'Edm.Int32'">NSNumber *</xsl:if><xsl:if test="@Type = 'Edm.Int16'">NSNumber *</xsl:if><xsl:if test="@Type = 'Edm.Int64'">NSNumber *</xsl:if>
 <xsl:if test="@Type = 'Edm.Binary'">NSData *</xsl:if>
@@ -134,7 +134,7 @@
 }
 
 @property ( nonatomic , retain , getter=getEtag , setter=setEtag: )NSString *m_OData_etag;
-    <xsl:for-each select="schema_1_0:EntitySet | schema_1_1:EntitySet | schema_1_2:EntitySet">@property ( nonatomic , retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: ) DataServiceQuery *m_<xsl:value-of select="@Name"/>;
+<xsl:for-each select="schema_1_0:EntitySet | schema_1_1:EntitySet | schema_1_2:EntitySet">@property ( nonatomic , retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: ) DataServiceQuery *m_<xsl:value-of select="@Name"/>;
 </xsl:for-each>
 - (id) init;
 - (id) initWithUri:(NSString*)anUri credential:(id)acredential;
