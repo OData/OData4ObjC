@@ -45,9 +45,9 @@
      */
     NSString *m_Address;
 }
-@property(nonatomic,retain,getter=getName, setter = setName)NSString *m_Name;
-@property(nonatomic,retain,getter=getAge, setter = setAge)NSString *m_Age;
-@property(nonatomic,retain,getter=getAddress, setter = setAddress)NSString *m_Address;
+@property(nonatomic,retain,getter=getName, setter = setName:)NSString *m_Name;
+@property(nonatomic,retain,getter=getAge, setter = setAge:)NSString *m_Age;
+@property(nonatomic,retain,getter=getAddress, setter = setAddress:)NSString *m_Address;
 -(id) initWithUri:(NSString *)aUri;
 
 @end

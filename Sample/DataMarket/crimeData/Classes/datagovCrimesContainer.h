@@ -155,21 +155,21 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getROWID , setter=setROWID )NSNumber *m_ROWID;
-@property ( nonatomic , retain , getter=getState , setter=setState ) NSString *m_State;
-@property ( nonatomic , retain , getter=getCity , setter=setCity ) NSString *m_City;
-@property ( nonatomic , retain , getter=getYear , setter=setYear )NSNumber *m_Year;
-@property ( nonatomic , retain , getter=getPopulation , setter=setPopulation )NSNumber *m_Population;
-@property ( nonatomic , retain , getter=getViolentCrime , setter=setViolentCrime )NSNumber *m_ViolentCrime;
-@property ( nonatomic , retain , getter=getMurderAndNonEgligentManslaughter , setter=setMurderAndNonEgligentManslaughter )NSNumber *m_MurderAndNonEgligentManslaughter;
-@property ( nonatomic , retain , getter=getForcibleRape , setter=setForcibleRape )NSNumber *m_ForcibleRape;
-@property ( nonatomic , retain , getter=getRobbery , setter=setRobbery )NSNumber *m_Robbery;
-@property ( nonatomic , retain , getter=getAggravatedAssault , setter=setAggravatedAssault )NSNumber *m_AggravatedAssault;
-@property ( nonatomic , retain , getter=getPropertyCrime , setter=setPropertyCrime )NSNumber *m_PropertyCrime;
-@property ( nonatomic , retain , getter=getBurglary , setter=setBurglary )NSNumber *m_Burglary;
-@property ( nonatomic , retain , getter=getLarcenyTheft , setter=setLarcenyTheft )NSNumber *m_LarcenyTheft;
-@property ( nonatomic , retain , getter=getMotorVehicleTheft , setter=setMotorVehicleTheft )NSNumber *m_MotorVehicleTheft;
-@property ( nonatomic , retain , getter=getArson , setter=setArson )NSNumber *m_Arson;
+@property ( nonatomic , retain , getter=getROWID , setter=setROWID: )NSNumber *m_ROWID;
+@property ( nonatomic , retain , getter=getState , setter=setState: ) NSString *m_State;
+@property ( nonatomic , retain , getter=getCity , setter=setCity: ) NSString *m_City;
+@property ( nonatomic , retain , getter=getYear , setter=setYear: )NSNumber *m_Year;
+@property ( nonatomic , retain , getter=getPopulation , setter=setPopulation: )NSNumber *m_Population;
+@property ( nonatomic , retain , getter=getViolentCrime , setter=setViolentCrime: )NSNumber *m_ViolentCrime;
+@property ( nonatomic , retain , getter=getMurderAndNonEgligentManslaughter , setter=setMurderAndNonEgligentManslaughter: )NSNumber *m_MurderAndNonEgligentManslaughter;
+@property ( nonatomic , retain , getter=getForcibleRape , setter=setForcibleRape: )NSNumber *m_ForcibleRape;
+@property ( nonatomic , retain , getter=getRobbery , setter=setRobbery: )NSNumber *m_Robbery;
+@property ( nonatomic , retain , getter=getAggravatedAssault , setter=setAggravatedAssault: )NSNumber *m_AggravatedAssault;
+@property ( nonatomic , retain , getter=getPropertyCrime , setter=setPropertyCrime: )NSNumber *m_PropertyCrime;
+@property ( nonatomic , retain , getter=getBurglary , setter=setBurglary: )NSNumber *m_Burglary;
+@property ( nonatomic , retain , getter=getLarcenyTheft , setter=setLarcenyTheft: )NSNumber *m_LarcenyTheft;
+@property ( nonatomic , retain , getter=getMotorVehicleTheft , setter=setMotorVehicleTheft: )NSNumber *m_MotorVehicleTheft;
+@property ( nonatomic , retain , getter=getArson , setter=setArson: )NSNumber *m_Arson;
 
 + (id) CreateCityCrimeWithrowid:(NSNumber *)aROWID year:(NSNumber *)aYear population:(NSNumber *)aPopulation violentcrime:(NSNumber *)aViolentCrime murderandnonegligentmanslaughter:(NSNumber *)aMurderAndNonEgligentManslaughter forciblerape:(NSNumber *)aForcibleRape robbery:(NSNumber *)aRobbery aggravatedassault:(NSNumber *)aAggravatedAssault propertycrime:(NSNumber *)aPropertyCrime burglary:(NSNumber *)aBurglary larcenytheft:(NSNumber *)aLarcenyTheft motorvehicletheft:(NSNumber *)aMotorVehicleTheft arson:(NSNumber *)aArson;
 - (id) init;
@@ -186,8 +186,8 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getEtag , setter=setEtag )NSString *m_OData_etag;
-@property ( nonatomic , retain , getter=getCityCrime , setter=setCityCrime ) DataServiceQuery *m_CityCrime;
+@property ( nonatomic , retain , getter=getEtag , setter=setEtag: )NSString *m_OData_etag;
+@property ( nonatomic , retain , getter=getCityCrime , setter=setCityCrime: ) DataServiceQuery *m_CityCrime;
 
 - (id) init;
 - (id) initWithUri:(NSString*)anUri credential:(id)acredential;
