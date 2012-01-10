@@ -24,9 +24,9 @@
 	NSInteger		m_statusCode;
 }
 
-@property(nonatomic,	retain,	getter=getError,		setter=setError		)NSString *m_error;
-@property(nonatomic,	retain,	getter=getHeaders,		setter=setHeaders	)NSDictionary *m_headers;
-@property(nonatomic,	assign,	getter=getStatusCode,	setter=setStatusCode)NSInteger m_statusCode;
+@property(nonatomic,	retain,	getter=getError,		setter=setError:		)NSString *m_error;
+@property(nonatomic,	retain,	getter=getHeaders,		setter=setHeaders:	)NSDictionary *m_headers;
+@property(nonatomic,	assign,	getter=getStatusCode,	setter=setStatusCode:)NSInteger m_statusCode;
 
 -(id) initWithError:(NSString *)anError headers:(NSDictionary*)aheaders statusCode:(NSInteger)aStatusCode;
 @end

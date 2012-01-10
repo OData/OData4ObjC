@@ -22,8 +22,8 @@
 	NSString *m_version;
 }
 
-@property ( nonatomic , retain , getter=getUri ,		setter=setUri		) NSString *m_uri;
-@property ( nonatomic , retain , getter=getVersion ,	setter=setVersion	) NSString *m_version;
+@property ( nonatomic , retain , getter=getUri ,		setter=setUri:		) NSString *m_uri;
+@property ( nonatomic , retain , getter=getVersion ,	setter=setVersion:	) NSString *m_version;
 
 - (id) init;
 - (id) initWithUri: (NSString*) aUri version: (NSString*)aVersion;

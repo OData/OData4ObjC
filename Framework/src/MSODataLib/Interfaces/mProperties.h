@@ -36,21 +36,21 @@
 	NSString	*m_FC_NsPrefix;
 	NSString	*m_FC_NsUri;
 }
-@property(nonatomic,retain,	getter=getEdmType,			setter=setEdmType			) NSString *m_EdmType;
-@property(nonatomic,retain,	getter=getMaxLength,		setter=setMaxLength			) NSString *m_MaxLength;
-@property(nonatomic,retain,	getter=getMinLength,		setter=setMinLength			) NSString *m_MinLength;
+@property(nonatomic,retain,	getter=getEdmType,			setter=setEdmType:			) NSString *m_EdmType;
+@property(nonatomic,retain,	getter=getMaxLength,		setter=setMaxLength:			) NSString *m_MaxLength;
+@property(nonatomic,retain,	getter=getMinLength,		setter=setMinLength:			) NSString *m_MinLength;
 
-@property(nonatomic,assign,	getter=getFixedLength,		setter=setFixedLength		) BOOL m_FixedLength;
-@property(nonatomic,assign,	getter=getNullable,			setter=setNullable			) BOOL m_Nullable;
-@property(nonatomic,assign,	getter=getUnicode,			setter=setUnicode			) BOOL m_Unicode;
+@property(nonatomic,assign,	getter=getFixedLength,		setter=setFixedLength:		) BOOL m_FixedLength;
+@property(nonatomic,assign,	getter=getNullable,			setter=setNullable:			) BOOL m_Nullable;
+@property(nonatomic,assign,	getter=getUnicode,			setter=setUnicode:			) BOOL m_Unicode;
 
-@property(nonatomic,retain,	getter=getConcurrencyMode,	setter=setConcurrencyMode	) NSString *m_ConcurrencyMode;
-@property(nonatomic,retain,	getter=getFC_TargetPath,	setter=setFC_TargetPath		) NSString *m_FC_TargetPath;
-@property(nonatomic,assign,	getter=getFC_KeepInContent,	setter=setFC_KeepInContent	) BOOL m_FC_KeepInContent;
-@property(nonatomic,retain,	getter=getFC_SourcePath,	setter=setFC_SourcePath		) NSString *m_FC_SourcePath;
-@property(nonatomic,retain,	getter=getFC_ContentKind,	setter=setFC_ContentKind	) NSString *m_FC_ContentKind;
-@property(nonatomic,retain,	getter=getFC_NsPrefix,		setter=setFC_NsPrefix		) NSString *m_FC_NsPrefix;
-@property(nonatomic,retain,	getter=getFC_NsUri,			setter=setFC_NsUri			) NSString *m_FC_NsUri;
+@property(nonatomic,retain,	getter=getConcurrencyMode,	setter=setConcurrencyMode:	) NSString *m_ConcurrencyMode;
+@property(nonatomic,retain,	getter=getFC_TargetPath,	setter=setFC_TargetPath:		) NSString *m_FC_TargetPath;
+@property(nonatomic,assign,	getter=getFC_KeepInContent,	setter=setFC_KeepInContent:	) BOOL m_FC_KeepInContent;
+@property(nonatomic,retain,	getter=getFC_SourcePath,	setter=setFC_SourcePath:		) NSString *m_FC_SourcePath;
+@property(nonatomic,retain,	getter=getFC_ContentKind,	setter=setFC_ContentKind:	) NSString *m_FC_ContentKind;
+@property(nonatomic,retain,	getter=getFC_NsPrefix,		setter=setFC_NsPrefix:		) NSString *m_FC_NsPrefix;
+@property(nonatomic,retain,	getter=getFC_NsUri,			setter=setFC_NsUri:			) NSString *m_FC_NsUri;
 
 -(id)init;
 -(id)initWithEdmType:(NSString *)anEdmType MaxLength:(NSString *)theMaxLength MinLength:(NSString *)theMinLength FixedLength:(BOOL)isFixedLength Nullable:(BOOL)isNullable

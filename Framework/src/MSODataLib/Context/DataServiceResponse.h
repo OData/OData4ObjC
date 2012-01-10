@@ -25,10 +25,10 @@
 	NSInteger m_statusCode;
 }
 
-@property ( nonatomic , assign , getter=IsBatchResponse ,		setter=setBatchResponse		) BOOL m_batchResponse;
-@property ( nonatomic , retain , getter=getBatchHeaders ,		setter=setHeaders			) NSString *m_headers;
-@property ( nonatomic , retain , getter=getOperationResponse ,	setter=setOperationResponse	) NSMutableArray *m_operationResponse;
-@property ( nonatomic , assign , getter=getBatchStatusCode ,	setter=setStatusCode		) NSInteger m_statusCode;
+@property ( nonatomic , assign , getter=IsBatchResponse ,		setter=setBatchResponse:		) BOOL m_batchResponse;
+@property ( nonatomic , retain , getter=getBatchHeaders ,		setter=setHeaders:			) NSString *m_headers;
+@property ( nonatomic , retain , getter=getOperationResponse ,	setter=setOperationResponse:	) NSMutableArray *m_operationResponse;
+@property ( nonatomic , assign , getter=getBatchStatusCode ,	setter=setStatusCode:		) NSInteger m_statusCode;
 
 - (id) initWithHeader:(NSString*)aHeader statusCode:(NSInteger)aStatusCode operationResponse:(NSMutableArray*)anOperationResponse batchResponse:(BOOL)aBatchResponse;
 

@@ -34,8 +34,8 @@
     DataServiceRequestArgs *m_args;
 }
 
-@property ( nonatomic , retain , getter=getStream , setter=setStream ) ContentStream *m_stream;
-@property ( nonatomic , retain , getter=getArgs	,	setter=setArgs	 ) DataServiceRequestArgs *m_args; 
+@property ( nonatomic , retain , getter=getStream , setter=setStream: ) ContentStream *m_stream;
+@property ( nonatomic , retain , getter=getArgs	,	setter=setArgs:	 ) DataServiceRequestArgs *m_args; 
 
 - (id) initWithStream:(ContentStream*)aStream dataServiceRequestArgs:(DataServiceRequestArgs*)aDataServiceRequestArgs;
 

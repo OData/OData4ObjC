@@ -130,17 +130,17 @@
     
 }
 
-@property ( nonatomic , assign , getter=getContext ,						setter=setContext						) ObjectContext *m_context;
-@property ( nonatomic , retain , getter=getHttpResponsesArray ,				setter=setHttpResponsesArray			) NSMutableArray *m_httpResponsesArray;
-@property ( nonatomic , retain , getter=getBatchBoundary ,					setter=setBatchBoundary					) NSMutableString *m_batchBoundary;
-@property ( nonatomic , retain , getter=getChangesetBoundry	,				setter=setChangesetBoundry				) NSMutableString *m_changesetBoundry;
-@property ( nonatomic , retain , getter=getBatchRequestBody	,				setter=setBatchRequestBody				) NSMutableString *m_batchRequestBody;
-@property ( nonatomic , assign , getter=getCompleted ,						setter=setCompleted						) BOOL m_completed;
-@property ( nonatomic , assign , getter=getEntryIndex ,						setter=setEntryIndex					) NSUInteger m_entryIndex;
-@property ( nonatomic , assign , getter=getProcessingMediaLinkEntry ,		setter=setProcessingMediaLinkEntry		)  BOOL m_processingMediaLinkEntry;
-@property ( nonatomic , assign , getter=getProcessingMediaLinkEntryPut ,	setter=setProcessingMediaLinkEntryPut	)  BOOL m_processingMediaLinkEntryPut;
-@property ( nonatomic , retain , getter=getMediaResourceRequestStream ,		setter=setMediaResourceRequestStream	) ContentStream *m_mediaResourceRequestStream;
-@property ( nonatomic , assign , getter=isAzureRequest	,					setter=setAzureRequest					) BOOL m_isAzureRequest;
+@property ( nonatomic , assign , getter=getContext ,						setter=setContext:						) ObjectContext *m_context;
+@property ( nonatomic , retain , getter=getHttpResponsesArray ,				setter=setHttpResponsesArray:			) NSMutableArray *m_httpResponsesArray;
+@property ( nonatomic , retain , getter=getBatchBoundary ,					setter=setBatchBoundary:					) NSMutableString *m_batchBoundary;
+@property ( nonatomic , retain , getter=getChangesetBoundry	,				setter=setChangesetBoundry:				) NSMutableString *m_changesetBoundry;
+@property ( nonatomic , retain , getter=getBatchRequestBody	,				setter=setBatchRequestBody:				) NSMutableString *m_batchRequestBody;
+@property ( nonatomic , assign , getter=getCompleted ,						setter=setCompleted:						) BOOL m_completed;
+@property ( nonatomic , assign , getter=getEntryIndex ,						setter=setEntryIndex:					) NSUInteger m_entryIndex;
+@property ( nonatomic , assign , getter=getProcessingMediaLinkEntry ,		setter=setProcessingMediaLinkEntry:		)  BOOL m_processingMediaLinkEntry;
+@property ( nonatomic , assign , getter=getProcessingMediaLinkEntryPut ,	setter=setProcessingMediaLinkEntryPut:	)  BOOL m_processingMediaLinkEntryPut;
+@property ( nonatomic , retain , getter=getMediaResourceRequestStream ,		setter=setMediaResourceRequestStream:	) ContentStream *m_mediaResourceRequestStream;
+@property ( nonatomic , assign , getter=isAzureRequest	,					setter=setAzureRequest:					) BOOL m_isAzureRequest;
 
 - (id) initWithObjectContext:(ObjectContext*)anObjectContext saveChangesOptions:(NSInteger)aSaveChangesOptions;
 

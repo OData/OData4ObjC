@@ -36,13 +36,13 @@
 	NSString				*m_OData_etag;
 }
 
-@property ( nonatomic, retain, getter=getObjectID,		   setter=setObjectID         ) NSString *m_objectID;
-@property ( nonatomic, retain, getter=getEntityMap,		   setter=setEntityMap		  )NSMutableDictionary *m_OData_entityMap;
-@property ( nonatomic, retain, getter=getEntityKey,		   setter=setEntityKey		  )NSMutableDictionary *m_OData_entityKey;
-@property ( nonatomic, retain, getter=getRelLinks,		   setter=setRelLinks		  )NSMutableArray *m_OData_relLinks;
-@property ( nonatomic, retain, getter=getBaseURI,		   setter=setBaseURI		  )NSString *m_OData_baseURI;
-@property ( nonatomic, retain, getter=getEntityFKRelation, setter=setEntityFKRelation )NSMutableDictionary *m_OData_entityFKRelation;
-@property ( nonatomic, retain, getter=getEtag,			   setter=setEtag             )NSString *m_OData_etag;
+@property ( nonatomic, retain, getter=getObjectID,		   setter=setObjectID:         ) NSString *m_objectID;
+@property ( nonatomic, retain, getter=getEntityMap,		   setter=setEntityMap:		  )NSMutableDictionary *m_OData_entityMap;
+@property ( nonatomic, retain, getter=getEntityKey,		   setter=setEntityKey:		  )NSMutableDictionary *m_OData_entityKey;
+@property ( nonatomic, retain, getter=getRelLinks,		   setter=setRelLinks:		  )NSMutableArray *m_OData_relLinks;
+@property ( nonatomic, retain, getter=getBaseURI,		   setter=setBaseURI:		  )NSString *m_OData_baseURI;
+@property ( nonatomic, retain, getter=getEntityFKRelation, setter=setEntityFKRelation: )NSMutableDictionary *m_OData_entityFKRelation;
+@property ( nonatomic, retain, getter=getEtag,			   setter=setEtag:             )NSString *m_OData_etag;
 - (id) init;
 - (id) initWithUri:(NSString*)anUri;
 - (id) getActualEntityTypeName:(id)aKey;

@@ -26,11 +26,11 @@
 }
 
 
-@property ( nonatomic , retain , getter=getHttpBody    , setter=setHttpBody     ) NSData *m_HttpBody;
-@property ( nonatomic , retain , getter=getHttpHeaders , setter=setHttpHeaders	) NSMutableDictionary *m_HttpHeaders;
-@property ( nonatomic , getter=getHttpCode             , setter=setHttpCode		) NSInteger m_HttpCode;
-@property ( nonatomic , retain , getter=getHttpMessage , setter=setHttpMessage	) NSString *m_HttpMessage;
-@property ( nonatomic , retain , getter=getHttpError   , setter=setHttpError	) NSError *m_Httperror;
+@property ( nonatomic , retain , getter=getHttpBody    , setter=setHttpBody:     ) NSData *m_HttpBody;
+@property ( nonatomic , retain , getter=getHttpHeaders , setter=setHttpHeaders:	) NSMutableDictionary *m_HttpHeaders;
+@property ( nonatomic , getter=getHttpCode             , setter=setHttpCode:		) NSInteger m_HttpCode;
+@property ( nonatomic , retain , getter=getHttpMessage , setter=setHttpMessage:	) NSString *m_HttpMessage;
+@property ( nonatomic , retain , getter=getHttpError   , setter=setHttpError:	) NSError *m_Httperror;
 
 
 - (id) initWithHTTP:(NSData *)aBody headers:(NSMutableDictionary *)aHeader httpCode:(NSInteger)aCode httpMessage:(NSString *)message;

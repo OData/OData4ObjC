@@ -24,8 +24,8 @@
 	NSString *m_title;
 }
 
-@property ( nonatomic , retain , getter=getHref, setter= setHref ) NSString * m_href;
-@property ( nonatomic , retain , getter=getTitle, setter= setTitle ) NSString * m_title;
+@property ( nonatomic , retain , getter=getHref, setter= setHref: ) NSString * m_href;
+@property ( nonatomic , retain , getter=getTitle, setter= setTitle: ) NSString * m_title;
 
 - (id) initWithHref:(NSString*)aHref title:(NSString*)aTitle;
 
@@ -37,8 +37,8 @@
 	NSMutableDictionary *m_collections;
 }
 
-@property ( nonatomic , retain , getter=getTitle, setter= setTitle ) NSString * m_title;
-@property ( nonatomic , retain , getter=getCollections , setter=setCollections ) NSMutableDictionary * m_collections;
+@property ( nonatomic , retain , getter=getTitle, setter= setTitle: ) NSString * m_title;
+@property ( nonatomic , retain , getter=getCollections , setter=setCollections: ) NSMutableDictionary * m_collections;
 
 - (id) initWithTitle:(NSString*)aTitle collections:(NSMutableDictionary*)theCollections;
 - (ODataCollection*) getCollection:(NSString*)aHref;
@@ -51,8 +51,8 @@
 	NSMutableDictionary *m_workspaces;
 }
 
-@property ( nonatomic , retain , getter=getBaseUrl , setter= setBaseUrl ) NSString *m_baseUrl;
-@property ( nonatomic , retain , getter=getWorkspaces , setter=setWorkspaces ) NSMutableDictionary *m_workspaces;
+@property ( nonatomic , retain , getter=getBaseUrl , setter= setBaseUrl: ) NSString *m_baseUrl;
+@property ( nonatomic , retain , getter=getWorkspaces , setter=setWorkspaces: ) NSMutableDictionary *m_workspaces;
 
 - (id) initWithUrl:(NSString*)anUrl workspaces:(NSMutableDictionary*)theWorkspaces;
 - (ODataWorkspace*) getWorkspace:(NSString*)aTitle;

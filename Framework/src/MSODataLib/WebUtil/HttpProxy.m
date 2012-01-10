@@ -35,7 +35,7 @@
  * @return string  m_port The Proxy Server m_port Number    
  */
 - (id) initWithAddress:(NSString*) anAddress port:(NSString*) aPort {
-	if(self = [super init])
+	if((self = [super init]))
 	{
 		[self setProxyAddres:[NSString stringWithString:anAddress]];
 		[self setProxyPort:[NSString stringWithString:aPort]];

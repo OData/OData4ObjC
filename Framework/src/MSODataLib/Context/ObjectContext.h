@@ -205,32 +205,32 @@
 
 }
 
-@property ( nonatomic , assign , getter=getObjectContextDelegate ,	setter=setObjectContextDelegate	) id<ObjectContextDelegate> m_objectContextdelegate;
-@property ( nonatomic , assign , getter=getDelegate ,				setter=setDelegate				) id<ObjectContextDelegate> m_delegate;
-@property ( nonatomic , retain , getter=getODataSVC ,				setter=setODataSVC				) ODataSVC *m_ODataSVC;
-@property ( nonatomic , retain , getter=getCredentials ,				setter=setCredentials			) CredentialBase *m_Credential;
+@property ( nonatomic , assign , getter=getObjectContextDelegate ,	setter=setObjectContextDelegate:	) id<ObjectContextDelegate> m_objectContextdelegate;
+@property ( nonatomic , assign , getter=getDelegate ,				setter=setDelegate:				) id<ObjectContextDelegate> m_delegate;
+@property ( nonatomic , retain , getter=getODataSVC ,				setter=setODataSVC:				) ODataSVC *m_ODataSVC;
+@property ( nonatomic , retain , getter=getCredentials ,				setter=setCredentials:			) CredentialBase *m_Credential;
 
-@property ( nonatomic , retain , getter=getBaseUri ,				setter=setBaseUri				) NSString *m_baseUri;
-@property ( nonatomic , retain , getter=getBaseUriWithSlash ,		setter=setBaseUriWithSlash		) NSString *m_baseUriWithSlash;
-@property ( nonatomic , assign , getter=getNextChange ,				setter=setNextChange			) NSInteger m_nextChange; 
-@property ( nonatomic , retain , getter=getAccept ,					setter=setAccept				) NSString *m_accept;
-@property ( nonatomic , retain , getter=getContentType ,			setter=setContentType			) NSString *m_contentType;
-@property ( nonatomic , assign , getter=getUsePostTunneling ,		setter=setUsePostTunneling		) BOOL m_usePostTunneling;
-@property ( nonatomic , assign , getter=getSaveChangesOptions ,		setter=setSaveChangesOptions	) NSInteger m_saveChangesOptions;
-@property ( nonatomic , assign , getter=getReplaceOnUpdateOption ,	setter=setReplaceOnUpdateOption	) BOOL m_replaceOnUpdateOption;
-@property ( nonatomic , retain , getter=getObjectToResource ,		setter=setObjectToResource		) Dictionary *m_objectToResource;
-@property ( nonatomic , retain , getter=getBindings ,				setter=setBindings				) Dictionary *m_bindings;
-@property ( nonatomic , retain , getter=getHttpProxy ,				setter=setHttpProxy				) HttpProxy *m_httpProxy;
-@property ( nonatomic , retain , getter=getIdentityToResource ,		setter=setIdentityToResource	) NSMutableDictionary *m_identityToResource;
-@property ( nonatomic , retain , getter=getEntities ,				setter=setEntities				) NSMutableArray *m_entities;
+@property ( nonatomic , retain , getter=getBaseUri ,				setter=setBaseUri:				) NSString *m_baseUri;
+@property ( nonatomic , retain , getter=getBaseUriWithSlash ,		setter=setBaseUriWithSlash:		) NSString *m_baseUriWithSlash;
+@property ( nonatomic , assign , getter=getNextChange ,				setter=setNextChange:			) NSInteger m_nextChange; 
+@property ( nonatomic , retain , getter=getAccept ,					setter=setAccept:				) NSString *m_accept;
+@property ( nonatomic , retain , getter=getContentType ,			setter=setContentType:			) NSString *m_contentType;
+@property ( nonatomic , assign , getter=getUsePostTunneling ,		setter=setUsePostTunneling:		) BOOL m_usePostTunneling;
+@property ( nonatomic , assign , getter=getSaveChangesOptions ,		setter=setSaveChangesOptions:	) NSInteger m_saveChangesOptions;
+@property ( nonatomic , assign , getter=getReplaceOnUpdateOption ,	setter=setReplaceOnUpdateOption:	) BOOL m_replaceOnUpdateOption;
+@property ( nonatomic , retain , getter=getObjectToResource ,		setter=setObjectToResource:		) Dictionary *m_objectToResource;
+@property ( nonatomic , retain , getter=getBindings ,				setter=setBindings:				) Dictionary *m_bindings;
+@property ( nonatomic , retain , getter=getHttpProxy ,				setter=setHttpProxy:				) HttpProxy *m_httpProxy;
+@property ( nonatomic , retain , getter=getIdentityToResource ,		setter=setIdentityToResource:	) NSMutableDictionary *m_identityToResource;
+@property ( nonatomic , retain , getter=getEntities ,				setter=setEntities:				) NSMutableArray *m_entities;
 
-@property ( nonatomic , retain , getter=getEntityFKRelation ,		setter=setEntityFKRelation		) NSMutableDictionary *m_entityFKRelation;
-@property ( nonatomic , retain , getter=getCustomHeaders ,			setter=setCustomHeaders			) NSMutableDictionary *m_customHeaders;
-@property ( nonatomic , retain , getter=getDataServiceVersion ,		setter=setDataServiceVersion	) NSString *m_dataServiceVersion;
-@property ( nonatomic , retain , getter=getServiceNamespace ,		setter=setServiceNamespace		) NSString *m_serviceNamespace;
-@property ( nonatomic , assign , getter=getODataDelegate ,			setter=setODataDelegate			) id<ODataDelegate> m_oDataDelegate;
+@property ( nonatomic , retain , getter=getEntityFKRelation ,		setter=setEntityFKRelation:		) NSMutableDictionary *m_entityFKRelation;
+@property ( nonatomic , retain , getter=getCustomHeaders ,			setter=setCustomHeaders:			) NSMutableDictionary *m_customHeaders;
+@property ( nonatomic , retain , getter=getDataServiceVersion ,		setter=setDataServiceVersion:	) NSString *m_dataServiceVersion;
+@property ( nonatomic , retain , getter=getServiceNamespace ,		setter=setServiceNamespace:		) NSString *m_serviceNamespace;
+@property ( nonatomic , assign , getter=getODataDelegate ,			setter=setODataDelegate:			) id<ODataDelegate> m_oDataDelegate;
 
-@property ( nonatomic , assign , getter=getTimeOutInterval ,        setter=setTimeOutInterval       ) NSTimeInterval m_timeOutInterval;
+@property ( nonatomic , assign , getter=getTimeOutInterval ,        setter=setTimeOutInterval:       ) NSTimeInterval m_timeOutInterval;
 
 
 

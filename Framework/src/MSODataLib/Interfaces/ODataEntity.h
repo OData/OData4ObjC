@@ -31,8 +31,8 @@
     NSInteger state;
 }
 
-@property ( nonatomic, assign , getter=getChangeOrder, setter=setChangeOrder) NSInteger changeOrder;
-@property ( nonatomic, assign , getter=getState , setter=setState) NSInteger state;
+@property ( nonatomic, assign , getter=getChangeOrder, setter=setChangeOrder:) NSInteger changeOrder;
+@property ( nonatomic, assign , getter=getState , setter=setState:) NSInteger state;
 
 - (id) init;
 

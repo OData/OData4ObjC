@@ -61,12 +61,12 @@
 	NSString *m_identity;
 }
 
-@property ( nonatomic ,	assign , getter=getMediaLinkEntry ,	setter=setMediaLinkEntry	) BOOL m_mediaLinkEntry;
-@property ( nonatomic , retain , getter=getMediaContentUri, setter=setMEdiaContentUri	) NSString *m_mediaContentUri;
-@property ( nonatomic , retain , getter=getEditMediaLink ,	setter=setEditMediaLink		) NSString *m_editMediaLink;
-@property ( nonatomic , retain , getter=getStreamETag ,		setter=setStreamETag		) NSString *m_streamETag;
-@property ( nonatomic , retain , getter=getEntityETag ,		setter=setEntityETag		) NSString *m_entityETag;
-@property ( nonatomic , retain , getter=getIdentity	,		setter=setIdentity			) NSString *m_identity;
+@property ( nonatomic ,	assign , getter=getMediaLinkEntry ,	setter=setMediaLinkEntry:	) BOOL m_mediaLinkEntry;
+@property ( nonatomic , retain , getter=getMediaContentUri, setter=setMEdiaContentUri:	) NSString *m_mediaContentUri;
+@property ( nonatomic , retain , getter=getEditMediaLink ,	setter=setEditMediaLink:		) NSString *m_editMediaLink;
+@property ( nonatomic , retain , getter=getStreamETag ,		setter=setStreamETag:		) NSString *m_streamETag;
+@property ( nonatomic , retain , getter=getEntityETag ,		setter=setEntityETag:		) NSString *m_entityETag;
+@property ( nonatomic , retain , getter=getIdentity	,		setter=setIdentity:			) NSString *m_identity;
 
 - (id) init;
 

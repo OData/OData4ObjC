@@ -19,7 +19,7 @@
 
 @interface HTTPHandler()
 
-@property (nonatomic,retain, getter=getStringURL ,setter=setStringURL) NSString *stringURL;	
+@property (nonatomic,retain, getter=getStringURL ,setter=setStringURL:) NSString *stringURL;	
 
 @end
 
