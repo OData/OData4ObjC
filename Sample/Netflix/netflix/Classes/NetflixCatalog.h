@@ -82,10 +82,10 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getSmallUrl , setter=setSmallUrl ) NSString *m_SmallUrl;
-@property ( nonatomic , retain , getter=getMediumUrl , setter=setMediumUrl ) NSString *m_MediumUrl;
-@property ( nonatomic , retain , getter=getLargeUrl , setter=setLargeUrl ) NSString *m_LargeUrl;
-@property ( nonatomic , retain , getter=getHighDefinitionUrl , setter=setHighDefinitionUrl ) NSString *m_HighDefinitionUrl;
+@property ( nonatomic , retain , getter=getSmallUrl , setter=setSmallUrl: ) NSString *m_SmallUrl;
+@property ( nonatomic , retain , getter=getMediumUrl , setter=setMediumUrl: ) NSString *m_MediumUrl;
+@property ( nonatomic , retain , getter=getLargeUrl , setter=setLargeUrl: ) NSString *m_LargeUrl;
+@property ( nonatomic , retain , getter=getHighDefinitionUrl , setter=setHighDefinitionUrl: ) NSString *m_HighDefinitionUrl;
 
 @end
 
@@ -136,12 +136,12 @@
 	
 }
 
-@property ( nonatomic , assign , getter=getAvailable , setter=setAvailable )ODataBool *m_Available;
-@property ( nonatomic , retain , getter=getAvailableFrom , setter=setAvailableFrom )NSDate *m_AvailableFrom;
-@property ( nonatomic , retain , getter=getAvailableTo , setter=setAvailableTo )NSDate *m_AvailableTo;
-@property ( nonatomic , assign , getter=getHighDefinitionAvailable , setter=setHighDefinitionAvailable )ODataBool *m_HighDefinitionAvailable;
-@property ( nonatomic , retain , getter=getRuntime , setter=setRuntime )NSNumber *m_Runtime;
-@property ( nonatomic , retain , getter=getRating , setter=setRating ) NSString *m_Rating;
+@property ( nonatomic , assign , getter=getAvailable , setter=setAvailable: )ODataBool *m_Available;
+@property ( nonatomic , retain , getter=getAvailableFrom , setter=setAvailableFrom: )NSDate *m_AvailableFrom;
+@property ( nonatomic , retain , getter=getAvailableTo , setter=setAvailableTo: )NSDate *m_AvailableTo;
+@property ( nonatomic , assign , getter=getHighDefinitionAvailable , setter=setHighDefinitionAvailable: )ODataBool *m_HighDefinitionAvailable;
+@property ( nonatomic , retain , getter=getRuntime , setter=setRuntime: )NSNumber *m_Runtime;
+@property ( nonatomic , retain , getter=getRating , setter=setRating: ) NSString *m_Rating;
 
 @end
 
@@ -185,55 +185,12 @@
 	
 }
 
-@property ( nonatomic , assign , getter=getAvailable , setter=setAvailable )ODataBool *m_Available;
-@property ( nonatomic , retain , getter=getAvailableFrom , setter=setAvailableFrom )NSDate *m_AvailableFrom;
-@property ( nonatomic , retain , getter=getAvailableTo , setter=setAvailableTo )NSDate *m_AvailableTo;
-@property ( nonatomic , retain , getter=getRuntime , setter=setRuntime )NSNumber *m_Runtime;
-@property ( nonatomic , retain , getter=getRating , setter=setRating ) NSString *m_Rating;
+@property ( nonatomic , assign , getter=getAvailable , setter=setAvailable: )ODataBool *m_Available;
+@property ( nonatomic , retain , getter=getAvailableFrom , setter=setAvailableFrom: )NSDate *m_AvailableFrom;
+@property ( nonatomic , retain , getter=getAvailableTo , setter=setAvailableTo: )NSDate *m_AvailableTo;
+@property ( nonatomic , retain , getter=getRuntime , setter=setRuntime: )NSNumber *m_Runtime;
+@property ( nonatomic , retain , getter=getRating , setter=setRating: ) NSString *m_Rating;
 
-@end
-
-/**
- * @interface:Genre
- * @Type:EntityType
- 
- * @key:Name* 
- */
-@interface NetflixCatalog_Model_Genre : ODataObject
-{
-	
-	/**
-	* @Type:EntityProperty
-	* NotNullable
-	* @EdmType:Edm.String
-	* @MaxLength:50
-	* @FixedLength:false
-	* @FC_TargetPath:SyndicationTitle
-	* @FC_ContentKind:
-	* @FC_NsPrefix:
-	* @FC_NsUri:
-	* @FC_KeepInContent:
-   * @FC_Criteria:NIL
-	
-	*/
-	NSString *m_Name;
-	
-	/**
-	* @Type:NavigationProperty
-	* @Relationship:TitleGenres
-	* @FromRole:Genres
-	* @ToRole:Titles
-	*/
-	NSMutableArray *m_Titles;
-	
-}
-
-@property ( nonatomic , retain , getter=getName , setter=setName ) NSString *m_Name;
-@property ( nonatomic , retain , getter=getTitles , setter=setTitles )NSMutableArray *m_Titles;
-
-+ (id) CreateGenreWithname:(NSString *)aName;
-- (id) init;
-- (id) initWithUri:(NSString*)anUri;
 @end
 
 /**
@@ -271,8 +228,8 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getName , setter=setName ) NSString *m_Name;
-@property ( nonatomic , retain , getter=getTitles , setter=setTitles )NSMutableArray *m_Titles;
+@property ( nonatomic , retain , getter=getName , setter=setName: ) NSString *m_Name;
+@property ( nonatomic , retain , getter=getTitles , setter=setTitles: )NSMutableArray *m_Titles;
 
 + (id) CreateLanguageWithname:(NSString *)aName;
 - (id) init;
@@ -337,11 +294,11 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getId , setter=setId )NSNumber *m_Id;
-@property ( nonatomic , retain , getter=getName , setter=setName ) NSString *m_Name;
-@property ( nonatomic , retain , getter=getAwards , setter=setAwards )NSMutableArray *m_Awards;
-@property ( nonatomic , retain , getter=getTitlesActedIn , setter=setTitlesActedIn )NSMutableArray *m_TitlesActedIn;
-@property ( nonatomic , retain , getter=getTitlesDirected , setter=setTitlesDirected )NSMutableArray *m_TitlesDirected;
+@property ( nonatomic , retain , getter=getId , setter=setId: )NSNumber *m_Id;
+@property ( nonatomic , retain , getter=getName , setter=setName: ) NSString *m_Name;
+@property ( nonatomic , retain , getter=getAwards , setter=setAwards: )NSMutableArray *m_Awards;
+@property ( nonatomic , retain , getter=getTitlesActedIn , setter=setTitlesActedIn: )NSMutableArray *m_TitlesActedIn;
+@property ( nonatomic , retain , getter=getTitlesDirected , setter=setTitlesDirected: )NSMutableArray *m_TitlesDirected;
 
 + (id) CreatePersonWithid:(NSNumber *)aId name:(NSString *)aName;
 - (id) init;
@@ -406,11 +363,11 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getTitleId , setter=setTitleId ) NSString *m_TitleId;
-@property ( nonatomic , retain , getter=getDeliveryFormat , setter=setDeliveryFormat ) NSString *m_DeliveryFormat;
-@property ( nonatomic , retain , getter=getLanguage , setter=setLanguage ) NSString *m_Language;
-@property ( nonatomic , retain , getter=getFormat , setter=setFormat ) NSString *m_Format;
-@property ( nonatomic , retain , getter=getTitle , setter=setTitle )NSMutableArray *m_Title;
+@property ( nonatomic , retain , getter=getTitleId , setter=setTitleId: ) NSString *m_TitleId;
+@property ( nonatomic , retain , getter=getDeliveryFormat , setter=setDeliveryFormat: ) NSString *m_DeliveryFormat;
+@property ( nonatomic , retain , getter=getLanguage , setter=setLanguage: ) NSString *m_Language;
+@property ( nonatomic , retain , getter=getFormat , setter=setFormat: ) NSString *m_Format;
+@property ( nonatomic , retain , getter=getTitle , setter=setTitle: )NSMutableArray *m_Title;
 
 + (id) CreateTitleAudioFormatWithtitleid:(NSString *)aTitleId deliveryformat:(NSString *)aDeliveryFormat language:(NSString *)aLanguage format:(NSString *)aFormat;
 - (id) init;
@@ -482,13 +439,13 @@
 	
 }
 
-@property ( nonatomic , retain ,  getter=getId , setter=setId )NSString *m_Id;
-@property ( nonatomic , retain , getter=getType , setter=setType ) NSString *m_Type;
-@property ( nonatomic , retain , getter=getCategory , setter=setCategory ) NSString *m_Category;
-@property ( nonatomic , retain , getter=getYear , setter=setYear )NSNumber *m_Year;
-@property ( nonatomic , retain , getter=getWon , setter=setWon )ODataBool *m_Won;
-@property ( nonatomic , retain , getter=getTitle , setter=setTitle )NSMutableArray *m_Title;
-@property ( nonatomic , retain , getter=getPerson , setter=setPerson )NSMutableArray *m_Person;
+@property ( nonatomic , retain ,  getter=getId , setter=setId: )NSString *m_Id;
+@property ( nonatomic , retain , getter=getType , setter=setType: ) NSString *m_Type;
+@property ( nonatomic , retain , getter=getCategory , setter=setCategory: ) NSString *m_Category;
+@property ( nonatomic , retain , getter=getYear , setter=setYear: )NSNumber *m_Year;
+@property ( nonatomic , retain , getter=getWon , setter=setWon: )ODataBool *m_Won;
+@property ( nonatomic , retain , getter=getTitle , setter=setTitle: )NSMutableArray *m_Title;
+@property ( nonatomic , retain , getter=getPerson , setter=setPerson: )NSMutableArray *m_Person;
 
 + (id) CreateTitleAwardWithid:(NSString *)aId type:(NSString *)aType category:(NSString *)aCategory won:(ODataBool *)aWon;
 - (id) init;
@@ -752,46 +709,37 @@
 	*/
 	NSMutableArray *m_Directors;
 	
-	/**
-	* @Type:NavigationProperty
-	* @Relationship:TitleGenres
-	* @FromRole:Titles
-	* @ToRole:Genres
-	*/
-	NSMutableArray *m_Genres;
-	
 }
 
-@property ( nonatomic , retain , getter=getId , setter=setId ) NSString *m_Id;
-@property ( nonatomic , retain , getter=getSynopsis , setter=setSynopsis ) NSString *m_Synopsis;
-@property ( nonatomic , retain , getter=getShortSynopsis , setter=setShortSynopsis ) NSString *m_ShortSynopsis;
-@property ( nonatomic , retain , getter=getAverageRating , setter=setAverageRating )NSDecimalNumber *m_AverageRating;
-@property ( nonatomic , retain , getter=getReleaseYear , setter=setReleaseYear )NSNumber *m_ReleaseYear;
-@property ( nonatomic , retain , getter=getUrl , setter=setUrl ) NSString *m_Url;
-@property ( nonatomic , retain , getter=getRuntime , setter=setRuntime )NSNumber *m_Runtime;
-@property ( nonatomic , retain , getter=getRating , setter=setRating ) NSString *m_Rating;
-@property ( nonatomic , retain , getter=getDateModified , setter=setDateModified )NSDate *m_DateModified;
-@property ( nonatomic , retain , getter=getType , setter=setType ) NSString *m_Type;
-@property ( nonatomic ,  retain , getter=getBoxArt , setter=setBoxArt )NetflixCatalog_Model_BoxArt *m_BoxArt;
-@property ( nonatomic , retain , getter=getShortName , setter=setShortName ) NSString *m_ShortName;
-@property ( nonatomic , retain , getter=getName , setter=setName ) NSString *m_Name;
-@property ( nonatomic ,  retain , getter=getInstant , setter=setInstant )NetflixCatalog_Model_InstantAvailability *m_Instant;
-@property ( nonatomic ,  retain , getter=getDvd , setter=setDvd )NetflixCatalog_Model_DeliveryFormatAvailability *m_Dvd;
-@property ( nonatomic ,  retain , getter=getBluRay , setter=setBluRay )NetflixCatalog_Model_DeliveryFormatAvailability *m_BluRay;
-@property ( nonatomic , retain , getter=getTinyUrl , setter=setTinyUrl ) NSString *m_TinyUrl;
-@property ( nonatomic , retain , getter=getWebsiteUrl , setter=setWebsiteUrl ) NSString *m_WebsiteUrl;
-@property ( nonatomic , retain , getter=getNetflixApiId , setter=setNetflixApiId ) NSString *m_NetflixApiId;
-@property ( nonatomic , retain , getter=getAudioFormats , setter=setAudioFormats )NSMutableArray *m_AudioFormats;
-@property ( nonatomic , retain , getter=getAwards , setter=setAwards )NSMutableArray *m_Awards;
-@property ( nonatomic , retain , getter=getDisc , setter=setDisc )NSMutableArray *m_Disc;
-@property ( nonatomic , retain , getter=getMovie , setter=setMovie )NSMutableArray *m_Movie;
-@property ( nonatomic , retain , getter=getSeason , setter=setSeason )NSMutableArray *m_Season;
-@property ( nonatomic , retain , getter=getSeries , setter=setSeries )NSMutableArray *m_Series;
-@property ( nonatomic , retain , getter=getScreenFormats , setter=setScreenFormats )NSMutableArray *m_ScreenFormats;
-@property ( nonatomic , retain , getter=getCast , setter=setCast )NSMutableArray *m_Cast;
-@property ( nonatomic , retain , getter=getLanguages , setter=setLanguages )NSMutableArray *m_Languages;
-@property ( nonatomic , retain , getter=getDirectors , setter=setDirectors )NSMutableArray *m_Directors;
-@property ( nonatomic , retain , getter=getGenres , setter=setGenres )NSMutableArray *m_Genres;
+@property ( nonatomic , retain , getter=getId , setter=setId: ) NSString *m_Id;
+@property ( nonatomic , retain , getter=getSynopsis , setter=setSynopsis: ) NSString *m_Synopsis;
+@property ( nonatomic , retain , getter=getShortSynopsis , setter=setShortSynopsis: ) NSString *m_ShortSynopsis;
+@property ( nonatomic , retain , getter=getAverageRating , setter=setAverageRating: )NSDecimalNumber *m_AverageRating;
+@property ( nonatomic , retain , getter=getReleaseYear , setter=setReleaseYear: )NSNumber *m_ReleaseYear;
+@property ( nonatomic , retain , getter=getUrl , setter=setUrl: ) NSString *m_Url;
+@property ( nonatomic , retain , getter=getRuntime , setter=setRuntime: )NSNumber *m_Runtime;
+@property ( nonatomic , retain , getter=getRating , setter=setRating: ) NSString *m_Rating;
+@property ( nonatomic , retain , getter=getDateModified , setter=setDateModified: )NSDate *m_DateModified;
+@property ( nonatomic , retain , getter=getType , setter=setType: ) NSString *m_Type;
+@property ( nonatomic ,  retain , getter=getBoxArt , setter=setBoxArt: )NetflixCatalog_Model_BoxArt *m_BoxArt;
+@property ( nonatomic , retain , getter=getShortName , setter=setShortName: ) NSString *m_ShortName;
+@property ( nonatomic , retain , getter=getName , setter=setName: ) NSString *m_Name;
+@property ( nonatomic ,  retain , getter=getInstant , setter=setInstant: )NetflixCatalog_Model_InstantAvailability *m_Instant;
+@property ( nonatomic ,  retain , getter=getDvd , setter=setDvd: )NetflixCatalog_Model_DeliveryFormatAvailability *m_Dvd;
+@property ( nonatomic ,  retain , getter=getBluRay , setter=setBluRay: )NetflixCatalog_Model_DeliveryFormatAvailability *m_BluRay;
+@property ( nonatomic , retain , getter=getTinyUrl , setter=setTinyUrl: ) NSString *m_TinyUrl;
+@property ( nonatomic , retain , getter=getWebsiteUrl , setter=setWebsiteUrl: ) NSString *m_WebsiteUrl;
+@property ( nonatomic , retain , getter=getNetflixApiId , setter=setNetflixApiId: ) NSString *m_NetflixApiId;
+@property ( nonatomic , retain , getter=getAudioFormats , setter=setAudioFormats: )NSMutableArray *m_AudioFormats;
+@property ( nonatomic , retain , getter=getAwards , setter=setAwards: )NSMutableArray *m_Awards;
+@property ( nonatomic , retain , getter=getDisc , setter=setDisc: )NSMutableArray *m_Disc;
+@property ( nonatomic , retain , getter=getMovie , setter=setMovie: )NSMutableArray *m_Movie;
+@property ( nonatomic , retain , getter=getSeason , setter=setSeason: )NSMutableArray *m_Season;
+@property ( nonatomic , retain , getter=getSeries , setter=setSeries: )NSMutableArray *m_Series;
+@property ( nonatomic , retain , getter=getScreenFormats , setter=setScreenFormats: )NSMutableArray *m_ScreenFormats;
+@property ( nonatomic , retain , getter=getCast , setter=setCast: )NSMutableArray *m_Cast;
+@property ( nonatomic , retain , getter=getLanguages , setter=setLanguages: )NSMutableArray *m_Languages;
+@property ( nonatomic , retain , getter=getDirectors , setter=setDirectors: )NSMutableArray *m_Directors;
 
 + (id) CreateTitleWithid:(NSString *)aId datemodified:(NSDate *)aDateModified type:(NSString *)aType boxart:(NetflixCatalog_Model_BoxArt *)aBoxArt shortname:(NSString *)aShortName name:(NSString *)aName instant:(NetflixCatalog_Model_InstantAvailability *)aInstant dvd:(NetflixCatalog_Model_DeliveryFormatAvailability *)aDvd bluray:(NetflixCatalog_Model_DeliveryFormatAvailability *)aBluRay tinyurl:(NSString *)aTinyUrl netflixapiid:(NSString *)aNetflixApiId;
 - (id) init;
@@ -846,10 +794,10 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getTitleId , setter=setTitleId ) NSString *m_TitleId;
-@property ( nonatomic , retain , getter=getDeliveryFormat , setter=setDeliveryFormat ) NSString *m_DeliveryFormat;
-@property ( nonatomic , retain , getter=getFormat , setter=setFormat ) NSString *m_Format;
-@property ( nonatomic , retain , getter=getTitle , setter=setTitle )NSMutableArray *m_Title;
+@property ( nonatomic , retain , getter=getTitleId , setter=setTitleId: ) NSString *m_TitleId;
+@property ( nonatomic , retain , getter=getDeliveryFormat , setter=setDeliveryFormat: ) NSString *m_DeliveryFormat;
+@property ( nonatomic , retain , getter=getFormat , setter=setFormat: ) NSString *m_Format;
+@property ( nonatomic , retain , getter=getTitle , setter=setTitle: )NSMutableArray *m_Title;
 
 + (id) CreateTitleScreenFormatWithtitleid:(NSString *)aTitleId deliveryformat:(NSString *)aDeliveryFormat format:(NSString *)aFormat;
 - (id) init;
@@ -862,7 +810,6 @@
 @interface NetflixCatalog : ObjectContext
 {
 	 NSString *m_OData_etag;
-	 DataServiceQuery *m_Genres;
 	 DataServiceQuery *m_Languages;
 	 DataServiceQuery *m_People;
 	 DataServiceQuery *m_TitleAudioFormats;
@@ -872,14 +819,13 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getEtag , setter=setEtag )NSString *m_OData_etag;
-@property ( nonatomic , retain , getter=getGenres , setter=setGenres ) DataServiceQuery *m_Genres;
-@property ( nonatomic , retain , getter=getLanguages , setter=setLanguages ) DataServiceQuery *m_Languages;
-@property ( nonatomic , retain , getter=getPeople , setter=setPeople ) DataServiceQuery *m_People;
-@property ( nonatomic , retain , getter=getTitleAudioFormats , setter=setTitleAudioFormats ) DataServiceQuery *m_TitleAudioFormats;
-@property ( nonatomic , retain , getter=getTitleAwards , setter=setTitleAwards ) DataServiceQuery *m_TitleAwards;
-@property ( nonatomic , retain , getter=getTitles , setter=setTitles ) DataServiceQuery *m_Titles;
-@property ( nonatomic , retain , getter=getTitleScreenFormats , setter=setTitleScreenFormats ) DataServiceQuery *m_TitleScreenFormats;
+@property ( nonatomic , retain , getter=getEtag , setter=setEtag: )NSString *m_OData_etag;
+@property ( nonatomic , retain , getter=getLanguages , setter=setLanguages: ) DataServiceQuery *m_Languages;
+@property ( nonatomic , retain , getter=getPeople , setter=setPeople: ) DataServiceQuery *m_People;
+@property ( nonatomic , retain , getter=getTitleAudioFormats , setter=setTitleAudioFormats: ) DataServiceQuery *m_TitleAudioFormats;
+@property ( nonatomic , retain , getter=getTitleAwards , setter=setTitleAwards: ) DataServiceQuery *m_TitleAwards;
+@property ( nonatomic , retain , getter=getTitles , setter=setTitles: ) DataServiceQuery *m_Titles;
+@property ( nonatomic , retain , getter=getTitleScreenFormats , setter=setTitleScreenFormats: ) DataServiceQuery *m_TitleScreenFormats;
 
 - (id) init;
 - (id) initWithUri:(NSString*)anUri credential:(id)acredential;
@@ -888,14 +834,12 @@
 - (NSArray *) Seasons;
 - (NSArray *) Discs;
 - (NSArray *) Episodes;
-- (id) genres;
 - (id) languages;
 - (id) people;
 - (id) titleaudioformats;
 - (id) titleawards;
 - (id) titles;
 - (id) titlescreenformats;
-- (void) addToGenres:(id)anObject;
 - (void) addToLanguages:(id)anObject;
 - (void) addToPeople:(id)anObject;
 - (void) addToTitleAudioFormats:(id)anObject;

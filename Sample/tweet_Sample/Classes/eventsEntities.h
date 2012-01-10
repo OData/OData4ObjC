@@ -186,22 +186,22 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getSessionID , setter=setSessionID )NSNumber *m_SessionID;
-@property ( nonatomic , retain , getter=getEventCode , setter=setEventCode ) NSString *m_EventCode;
-@property ( nonatomic , retain , getter=getSessionCode , setter=setSessionCode ) NSString *m_SessionCode;
-@property ( nonatomic , retain , getter=getSessionTypeCode , setter=setSessionTypeCode ) NSString *m_SessionTypeCode;
-@property ( nonatomic , retain , getter=getLevel , setter=setLevel )NSNumber *m_Level;
-@property ( nonatomic , retain , getter=getAbstract , setter=setAbstract ) NSString *m_Abstract;
-@property ( nonatomic , retain , getter=getPublishFlag , setter=setPublishFlag )ODataBool *m_PublishFlag;
-@property ( nonatomic , retain , getter=getTitle , setter=setTitle ) NSString *m_Title;
-@property ( nonatomic , retain , getter=getNotes , setter=setNotes ) NSString *m_Notes;
-@property ( nonatomic , retain , getter=getRoom , setter=setRoom ) NSString *m_Room;
-@property ( nonatomic , retain , getter=getStartTime , setter=setStartTime )NSDate *m_StartTime;
-@property ( nonatomic , retain , getter=getDuration , setter=setDuration )NSNumber *m_Duration;
-@property ( nonatomic , retain , getter=getSpeakers , setter=setSpeakers )NSMutableArray *m_Speakers;
-@property ( nonatomic , retain , getter=getTags , setter=setTags )NSMutableArray *m_Tags;
-@property ( nonatomic , retain , getter=getFiles , setter=setFiles )NSMutableArray *m_Files;
-@property ( nonatomic , retain , getter=getTweets , setter=setTweets )NSMutableArray *m_Tweets;
+@property ( nonatomic , retain , getter=getSessionID , setter=setSessionID: )NSNumber *m_SessionID;
+@property ( nonatomic , retain , getter=getEventCode , setter=setEventCode: ) NSString *m_EventCode;
+@property ( nonatomic , retain , getter=getSessionCode , setter=setSessionCode: ) NSString *m_SessionCode;
+@property ( nonatomic , retain , getter=getSessionTypeCode , setter=setSessionTypeCode: ) NSString *m_SessionTypeCode;
+@property ( nonatomic , retain , getter=getLevel , setter=seLevel: )NSNumber *m_Level;
+@property ( nonatomic , retain , getter=getAbstract , setter=setAbstract: ) NSString *m_Abstract;
+@property ( nonatomic , retain , getter=getPublishFlag , setter=setPublishFlag: )ODataBool *m_PublishFlag;
+@property ( nonatomic , retain , getter=getTitle , setter=setTitle: ) NSString *m_Title;
+@property ( nonatomic , retain , getter=getNotes , setter=setNotes: ) NSString *m_Notes;
+@property ( nonatomic , retain , getter=getRoom , setter=setRoom: ) NSString *m_Room;
+@property ( nonatomic , retain , getter=getStartTime , setter=setStartTime: )NSDate *m_StartTime;
+@property ( nonatomic , retain , getter=getDuration , setter=setDuation: )NSNumber *m_Duration;
+@property ( nonatomic , retain , getter=getSpeakers , setter=setSpeakers: )NSMutableArray *m_Speakers;
+@property ( nonatomic , retain , getter=getTags , setter=setTags: )NSMutableArray *m_Tags;
+@property ( nonatomic , retain , getter=getFiles , setter=setFiles: )NSMutableArray *m_Files;
+@property ( nonatomic , retain , getter=getTweets , setter=setTweets: )NSMutableArray *m_Tweets;
 
 + (id) CreateSessionWithsessionid:(NSNumber *)aSessionID eventcode:(NSString *)aEventCode sessioncode:(NSString *)aSessionCode sessiontypecode:(NSString *)aSessionTypeCode publishflag:(ODataBool *)aPublishFlag title:(NSString *)aTitle;
 - (id) init;
@@ -305,15 +305,15 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getSpeakerID , setter=setSpeakerID )NSNumber *m_SpeakerID;
-@property ( nonatomic , retain , getter=getEmail , setter=setEmail ) NSString *m_Email;
-@property ( nonatomic , retain , getter=getFirstName , setter=setFirstName ) NSString *m_FirstName;
-@property ( nonatomic , retain , getter=getLastName , setter=setLastName ) NSString *m_LastName;
-@property ( nonatomic , retain , getter=getBio , setter=setBio ) NSString *m_Bio;
-@property ( nonatomic , retain , getter=getPhotoUri , setter=setPhotoUri ) NSString *m_PhotoUri;
-@property ( nonatomic , retain , getter=getNotes , setter=setNotes ) NSString *m_Notes;
-@property ( nonatomic , retain , getter=getExternalSpeaker , setter=setExternalSpeaker )ODataBool *m_ExternalSpeaker;
-@property ( nonatomic , retain , getter=getSessions , setter=setSessions )NSMutableArray *m_Sessions;
+@property ( nonatomic , retain , getter=getSpeakerID , setter=setSpeakerID: )NSNumber *m_SpeakerID;
+@property ( nonatomic , retain , getter=getEmail , setter=setEmail: ) NSString *m_Email;
+@property ( nonatomic , retain , getter=getFirstName , setter=setFirstName: ) NSString *m_FirstName;
+@property ( nonatomic , retain , getter=getLastName , setter=setLastName: ) NSString *m_LastName;
+@property ( nonatomic , retain , getter=getBio , setter=setBio: ) NSString *m_Bio;
+@property ( nonatomic , retain , getter=getPhotoUri , setter=setPhotoUri: ) NSString *m_PhotoUri;
+@property ( nonatomic , retain , getter=getNotes , setter=setNotes: ) NSString *m_Notes;
+@property ( nonatomic , retain , getter=getExternalSpeaker , setter=setExternalSpeaker: )ODataBool *m_ExternalSpeaker;
+@property ( nonatomic , retain , getter=getSessions , setter=setSessions: )NSMutableArray *m_Sessions;
 
 + (id) CreateSpeakerWithspeakerid:(NSNumber *)aSpeakerID firstname:(NSString *)aFirstName lastname:(NSString *)aLastName externalspeaker:(ODataBool *)aExternalSpeaker;
 - (id) init;
@@ -355,9 +355,9 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getTagID , setter=setTagID )NSNumber *m_TagID;
-@property ( nonatomic , retain , getter=getTagValue , setter=setTagValue ) NSString *m_TagValue;
-@property ( nonatomic , retain , getter=getSessions , setter=setSessions )NSMutableArray *m_Sessions;
+@property ( nonatomic , retain , getter=getTagID , setter=setTagID: )NSNumber *m_TagID;
+@property ( nonatomic , retain , getter=getTagValue , setter=setTagValue: ) NSString *m_TagValue;
+@property ( nonatomic , retain , getter=getSessions , setter=setSessions: )NSMutableArray *m_Sessions;
 
 + (id) CreateTagWithtagid:(NSNumber *)aTagID tagvalue:(NSString *)aTagValue;
 - (id) init;
@@ -415,11 +415,11 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getFileID , setter=setFileID )NSNumber *m_FileID;
-@property ( nonatomic , retain , getter=getMimeType , setter=setMimeType ) NSString *m_MimeType;
-@property ( nonatomic , retain , getter=getFileUri , setter=setFileUri ) NSString *m_FileUri;
-@property ( nonatomic , retain , getter=getSessionID , setter=setSessionID )NSNumber *m_SessionID;
-@property ( nonatomic , retain , getter=getSession , setter=setSession )NSMutableArray *m_Session;
+@property ( nonatomic , retain , getter=getFileID , setter=setFileID: )NSNumber *m_FileID;
+@property ( nonatomic , retain , getter=getMimeType , setter=setMimeType: ) NSString *m_MimeType;
+@property ( nonatomic , retain , getter=getFileUri , setter=setFileUri: ) NSString *m_FileUri;
+@property ( nonatomic , retain , getter=getSessionID , setter=setSessionID: )NSNumber *m_SessionID;
+@property ( nonatomic , retain , getter=getSession , setter=setSession: )NSMutableArray *m_Session;
 
 + (id) CreateFileWithfileid:(NSNumber *)aFileID mimetype:(NSString *)aMimeType fileuri:(NSString *)aFileUri sessionid:(NSNumber *)aSessionID;
 - (id) init;
@@ -480,11 +480,11 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getTweetID , setter=setTweetID ) NSString *m_TweetID;
-@property ( nonatomic , retain , getter=getAuthor , setter=setAuthor ) NSString *m_Author;
-@property ( nonatomic , retain , getter=getText , setter=setText ) NSString *m_Text;
-@property ( nonatomic , retain , getter=getSessionID , setter=setSessionID )NSNumber *m_SessionID;
-@property ( nonatomic , retain , getter=getSession , setter=setSession )NSMutableArray *m_Session;
+@property ( nonatomic , retain , getter=getTweetID , setter=setTweetID: ) NSString *m_TweetID;
+@property ( nonatomic , retain , getter=getAuthor , setter=setAuthor: ) NSString *m_Author;
+@property ( nonatomic , retain , getter=getText , setter=setText: ) NSString *m_Text;
+@property ( nonatomic , retain , getter=getSessionID , setter=setSessionID: )NSNumber *m_SessionID;
+@property ( nonatomic , retain , getter=getSession , setter=setSession: )NSMutableArray *m_Session;
 
 + (id) CreateTweetWithtweetid:(NSString *)aTweetID author:(NSString *)aAuthor text:(NSString *)aText sessionid:(NSNumber *)aSessionID;
 - (id) init;
@@ -505,12 +505,12 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getEtag , setter=setEtag )NSString *m_OData_etag;
-@property ( nonatomic , retain , getter=getSessions , setter=setSessions ) DataServiceQuery *m_Sessions;
-@property ( nonatomic , retain , getter=getSpeakers , setter=setSpeakers ) DataServiceQuery *m_Speakers;
-@property ( nonatomic , retain , getter=getTags , setter=setTags ) DataServiceQuery *m_Tags;
-@property ( nonatomic , retain , getter=getFiles , setter=setFiles ) DataServiceQuery *m_Files;
-@property ( nonatomic , retain , getter=getTweets , setter=setTweets ) DataServiceQuery *m_Tweets;
+@property ( nonatomic , retain , getter=getEtag , setter=setEtag: )NSString *m_OData_etag;
+@property ( nonatomic , retain , getter=getSessions , setter=setSessions: ) DataServiceQuery *m_Sessions;
+@property ( nonatomic , retain , getter=getSpeakers , setter=setSpeakers: ) DataServiceQuery *m_Speakers;
+@property ( nonatomic , retain , getter=getTags , setter=setTags: ) DataServiceQuery *m_Tags;
+@property ( nonatomic , retain , getter=getFiles , setter=setFiles: ) DataServiceQuery *m_Files;
+@property ( nonatomic , retain , getter=getTweets , setter=setTweets: ) DataServiceQuery *m_Tweets;
 
 - (id) init;
 - (id) initWithUri:(NSString*)anUri credential:(id)acredential;
