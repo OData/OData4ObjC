@@ -54,7 +54,7 @@
  */
 - (id) initWithServiceName:(NSString*) aServiceName wrapName:(NSString*)aWrapName wrapPassword:(NSString*)aWrapPassword wrapScope:(NSString*)aWrapScope claims:(NSMutableDictionary*)aClaims;
 {
-	if(self=[super init])
+	if((self=[super init]))
 	{
 		if(aServiceName)
 			serviceNamespace=aServiceName;			
@@ -122,7 +122,7 @@
 							
 		NSEnumerator *enumerator = [claims keyEnumerator];
 		NSString* key;
-		while(key = [ enumerator nextObject] )
+		while((key = [ enumerator nextObject]) )
 		{
 			NSString *value = [claims objectForKey:key];
 			if(value)
