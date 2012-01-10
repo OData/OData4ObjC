@@ -86,11 +86,11 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getStreet , setter=setStreet ) NSString *m_Street;
-@property ( nonatomic , retain , getter=getCity , setter=setCity ) NSString *m_City;
-@property ( nonatomic , retain , getter=getState , setter=setState ) NSString *m_State;
-@property ( nonatomic , retain , getter=getZipCode , setter=setZipCode ) NSString *m_ZipCode;
-@property ( nonatomic , retain , getter=getCountry , setter=setCountry ) NSString *m_Country;
+@property ( nonatomic , retain , getter=getStreet , setter=setStreet: ) NSString *m_Street;
+@property ( nonatomic , retain , getter=getCity , setter=setCity: ) NSString *m_City;
+@property ( nonatomic , retain , getter=getState , setter=setState: ) NSString *m_State;
+@property ( nonatomic , retain , getter=getZipCode , setter=setZipCode: ) NSString *m_ZipCode;
+@property ( nonatomic , retain , getter=getCountry , setter=setCountry: ) NSString *m_Country;
 
 @end
 
@@ -185,15 +185,15 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getID , setter=setID )NSNumber *m_ID;
-@property ( nonatomic , retain , getter=getName , setter=setName ) NSString *m_Name;
-@property ( nonatomic , retain , getter=getDescription , setter=setDescription ) NSString *m_Description;
-@property ( nonatomic , retain , getter=getReleaseDate , setter=setReleaseDate )NSDate *m_ReleaseDate;
-@property ( nonatomic , retain , getter=getDiscontinuedDate , setter=setDiscontinuedDate )NSDate *m_DiscontinuedDate;
-@property ( nonatomic , retain , getter=getRating , setter=setRating )NSNumber *m_Rating;
-@property ( nonatomic , retain , getter=getPrice , setter=setPrice )NSDecimalNumber *m_Price;
-@property ( nonatomic , retain , getter=getCategory , setter=setCategory )NSMutableArray *m_Category;
-@property ( nonatomic , retain , getter=getSupplier , setter=setSupplier )NSMutableArray *m_Supplier;
+@property ( nonatomic , retain , getter=getID , setter=setID: )NSNumber *m_ID;
+@property ( nonatomic , retain , getter=getName , setter=setName: ) NSString *m_Name;
+@property ( nonatomic , retain , getter=getDescription , setter=setDescription: ) NSString *m_Description;
+@property ( nonatomic , retain , getter=getReleaseDate , setter=setReleaseDate: )NSDate *m_ReleaseDate;
+@property ( nonatomic , retain , getter=getDiscontinuedDate , setter=setDiscontinuedDate: )NSDate *m_DiscontinuedDate;
+@property ( nonatomic , retain , getter=getRating , setter=setRating: )NSNumber *m_Rating;
+@property ( nonatomic , retain , getter=getPrice , setter=setPrice: )NSDecimalNumber *m_Price;
+@property ( nonatomic , retain , getter=getCategory , setter=setCategory: )NSMutableArray *m_Category;
+@property ( nonatomic , retain , getter=getSupplier , setter=setSupplier: )NSMutableArray *m_Supplier;
 
 + (id) CreateProductWithid:(NSNumber *)aID releasedate:(NSDate *)aReleaseDate rating:(NSNumber *)aRating price:(NSDecimalNumber *)aPrice;
 - (id) init;
@@ -241,9 +241,9 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getID , setter=setID )NSNumber *m_ID;
-@property ( nonatomic , retain , getter=getName , setter=setName ) NSString *m_Name;
-@property ( nonatomic , retain , getter=getProducts , setter=setProducts )NSMutableArray *m_Products;
+@property ( nonatomic , retain , getter=getID , setter=setID: )NSNumber *m_ID;
+@property ( nonatomic , retain , getter=getName , setter=setName: ) NSString *m_Name;
+@property ( nonatomic , retain , getter=getProducts , setter=setProducts: )NSMutableArray *m_Products;
 
 + (id) CreateCategoryWithid:(NSNumber *)aID;
 - (id) init;
@@ -305,11 +305,11 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getID , setter=setID )NSNumber *m_ID;
-@property ( nonatomic , retain , getter=getName , setter=setName ) NSString *m_Name;
-@property ( nonatomic ,  retain , getter=getAddress , setter=setAddress )ODataDemo_Address *m_Address;
-@property ( nonatomic , retain , getter=getConcurrency , setter=setConcurrency )NSNumber *m_Concurrency;
-@property ( nonatomic , retain , getter=getProducts , setter=setProducts )NSMutableArray *m_Products;
+@property ( nonatomic , retain , getter=getID , setter=setID: )NSNumber *m_ID;
+@property ( nonatomic , retain , getter=getName , setter=setName: ) NSString *m_Name;
+@property ( nonatomic ,  retain , getter=getAddress , setter=setAddress: )ODataDemo_Address *m_Address;
+@property ( nonatomic , retain , getter=getConcurrency , setter=setConcurrency: )NSNumber *m_Concurrency;
+@property ( nonatomic , retain , getter=getProducts , setter=setProducts: )NSMutableArray *m_Products;
 
 + (id) CreateSupplierWithid:(NSNumber *)aID address:(ODataDemo_Address *)aAddress concurrency:(NSNumber *)aConcurrency;
 - (id) init;
@@ -328,10 +328,10 @@
 	
 }
 
-@property ( nonatomic , retain , getter=getEtag , setter=setEtag )NSString *m_OData_etag;
-@property ( nonatomic , retain , getter=getProducts , setter=setProducts ) DataServiceQuery *m_Products;
-@property ( nonatomic , retain , getter=getCategories , setter=setCategories ) DataServiceQuery *m_Categories;
-@property ( nonatomic , retain , getter=getSuppliers , setter=setSuppliers ) DataServiceQuery *m_Suppliers;
+@property ( nonatomic , retain , getter=getEtag , setter=setEtag: )NSString *m_OData_etag;
+@property ( nonatomic , retain , getter=getProducts , setter=setProducts: ) DataServiceQuery *m_Products;
+@property ( nonatomic , retain , getter=getCategories , setter=setCategories: ) DataServiceQuery *m_Categories;
+@property ( nonatomic , retain , getter=getSuppliers , setter=setSuppliers: ) DataServiceQuery *m_Suppliers;
 
 - (id) init;
 - (id) initWithUri:(NSString*)anUri credential:(id)acredential;
