@@ -48,7 +48,7 @@
 		}
 		else
 		{
-			m_headers = [[NSMutableArray alloc] init];
+			m_headers = [[NSMutableDictionary alloc] init];
 		}
 		
     }
