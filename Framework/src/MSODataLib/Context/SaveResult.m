@@ -298,7 +298,7 @@
 {
 	NSString *uri =[m_context getBaseUriWithSlash];
 	uri = [uri stringByAppendingString:@"$batch"];
-	HttpBatchRequest *request = [[HttpBatchRequest alloc] initWithUri:uri batchBoundary:m_batchBoundary batchRequestBody:m_batchRequestBody credentials:nil batchHeaders:nil credentialsInHeaders:NO context:m_context];
+	HttpBatchRequest *request = [[HttpBatchRequest alloc] initWithUri:uri batchBoundary:m_batchBoundary batchRequestBody:m_batchRequestBody credentials:nil batchHeaders:m_context.m_customHeaders credentialsInHeaders:NO context:m_context];
 	HttpBatchResponse *response = [request GetResponse];
 	[self setHttpResponsesArray:[response getHttpResponses]];
 	[self storeBatchResponse];
