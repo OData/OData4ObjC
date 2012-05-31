@@ -43,7 +43,7 @@ credentialsInHeaders:(BOOL)isCredentialInHeaders context:(ObjectContext *)objCon
 	{
 		NSString *batchBoundary = [NSString stringWithFormat:@"multipart/mixed; boundary=%@",batchBounds];
 		NSData *postBody = [NSData dataWithData:[body dataUsingEncoding:NSUTF8StringEncoding]];
-		NSMutableDictionary *requestHeaders = [NSDictionary dictionaryWithObjectsAndKeys:
+		NSMutableDictionary *requestHeaders = [NSMutableDictionary dictionaryWithObjectsAndKeys:
 											    @"application/atom+xml,application/xml", @"Accept",
 											    batchBoundary, @"Content-Type", 
 											    @"1.0",@"DataServiceVersion", nil];
