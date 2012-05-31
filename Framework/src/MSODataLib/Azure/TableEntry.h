@@ -31,7 +31,6 @@
 	
 }
 
-@property(nonatomic,retain, getter=getEtag,		setter=setEtag:		)NSString *m_OData_etag;
 
 @property(nonatomic,retain, getter=getObjectID,		setter=setObjectID:		)NSString *m_OData_obectID;
 

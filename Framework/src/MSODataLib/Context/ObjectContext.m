@@ -46,6 +46,7 @@
 @synthesize m_Credential;
 @synthesize m_entities;
 @synthesize m_timeOutInterval;
+@synthesize m_entityFKRelation;
 
 + (void)initialize
 {
@@ -610,7 +611,12 @@
 	else
 		httpdata = [[NSData alloc] initWithData:[body dataUsingEncoding:NSUTF8StringEncoding]];
 	
-	HTTPHandler * httpHandler =  [self executeHTTPRequest:aUri httpmethod:method httpbodydata:httpdata etag:etag customHeaders:nil];
+	HTTPHandler * httpHandler = nil;
+    if ([m_customHeaders count] != 0) 
+        httpHandler =  [self executeHTTPRequest:aUri httpmethod:method httpbodydata:httpdata etag:etag customHeaders:m_customHeaders];
+    else
+        httpHandler =  [self executeHTTPRequest:aUri httpmethod:method httpbodydata:httpdata etag:etag customHeaders:nil];
+    
 	[httpdata release];
 	return httpHandler;	
 }
@@ -1553,7 +1559,7 @@
 
 -(void) setEntitiesWithArray:(NSArray *)anArray
 {
-	[self setEntities:[[[NSArray alloc]initWithArray:anArray] autorelease] ];
+	[self setEntities:[[[NSMutableArray alloc]initWithArray:anArray] autorelease] ];
 }
 
 
