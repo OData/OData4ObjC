@@ -36,9 +36,9 @@
     ODataObject *m_targetResource;
 }
 
-@property ( nonatomic , retain , getter=getSourceResource , setter=setSourceResource	) ODataObject *m_sourceResource;
-@property ( nonatomic , retain , getter=getSourceProperty , setter=setSourceProperty	) NSString *m_sourceProperty;
-@property ( nonatomic , retain , getter=getTargetResource , setter=setTargetResource	) ODataObject *m_targetResource;
+@property ( nonatomic , retain , getter=getSourceResource , setter=setSourceResource:	) ODataObject *m_sourceResource;
+@property ( nonatomic , retain , getter=getSourceProperty , setter=setSourceProperty:	) NSString *m_sourceProperty;
+@property ( nonatomic , retain , getter=getTargetResource , setter=setTargetResource:	) ODataObject *m_targetResource;
 
 -(id) initWithObject:(ODataObject*)aSourceResource sourceProperty:(NSString*) aSourceProperty targetResource:(ODataObject*)aTargetResource;
 -(BOOL) isEquals:(RelatedEnd*) aRelatedEndObj1 relatedEndObj2:(RelatedEnd*) aRelatedEndObj2;

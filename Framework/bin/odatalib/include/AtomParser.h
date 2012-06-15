@@ -44,7 +44,7 @@
 
 @property (nonatomic,assign) ObjectContext *m_objectContext;
 @property (nonatomic,assign) QueryOperationResponse *m_queryResponseObject;
-@property (nonatomic,retain,getter=getNextLinkUrl, setter=setNextLinkUrl) NSMutableDictionary *m_nextLinkUrl;
+@property (nonatomic,retain,getter=getNextLinkUrl, setter=setNextLinkUrl:) NSMutableDictionary *m_nextLinkUrl;
 
 -(id)init;
 -(id)initwithContext:(ObjectContext *)context;

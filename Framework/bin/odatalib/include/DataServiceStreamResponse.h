@@ -23,7 +23,7 @@
     NSMutableDictionary *m_headers;
 }
 
-@property ( nonatomic , retain , getter=getHttpResponse , setter=setHttpResponse) HttpResponse *m_httpResponse;
+@property ( nonatomic , retain , getter=getHttpResponse , setter=setHttpResponse:) HttpResponse *m_httpResponse;
 
 - (id) initWithHttpResponse:(HttpResponse*)aHttpResponse;
 - (NSMutableDictionary*) getHeaders;

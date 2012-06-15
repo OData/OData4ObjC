@@ -21,8 +21,8 @@
     NSString *m_port;
 }
 
-@property ( nonatomic , retain , getter=getProxyAddress ,	setter=setProxyAddres	) NSString *m_address;
-@property ( nonatomic , retain , getter=getProxyPort ,		setter=setProxyPort		) NSString *m_port;
+@property ( nonatomic , retain , getter=getProxyAddress ,	setter=setProxyAddres:	) NSString *m_address;
+@property ( nonatomic , retain , getter=getProxyPort ,		setter=setProxyPort:		) NSString *m_port;
 
 - (id) initWithAddress:(NSString*) anAddress port:(NSString*) aPort;
 @end

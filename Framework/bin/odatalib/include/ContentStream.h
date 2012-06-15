@@ -29,8 +29,8 @@
     NSData *m_stream;
 }
 
-@property ( nonatomic , assign , getter=IsKnownMemoryStream	,	setter=setKnownMemoryStream	) BOOL m_knownMemoryStream;
-@property ( nonatomic , retain , getter=getStream ,				setter=setStream			) NSData *m_stream;
+@property ( nonatomic , assign , getter=IsKnownMemoryStream	,	setter=setKnownMemoryStream:	) BOOL m_knownMemoryStream;
+@property ( nonatomic , retain , getter=getStream ,				setter=setStream:			) NSData *m_stream;
 
 - (id) initWithStream:(NSData*)aStream isKnownMemoryStream:(BOOL) aKnownMemoryStream;
 

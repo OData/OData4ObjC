@@ -24,8 +24,8 @@
 	id m_value;
 }
 
-@property ( nonatomic , retain , getter=getKey ,	setter=setKey	) id m_key;
-@property ( nonatomic , retain , getter=getValue ,	setter=setValue	) id m_value;
+@property ( nonatomic , retain , getter=getKey ,	setter=setKey:	) id m_key;
+@property ( nonatomic , retain , getter=getValue ,	setter=setValue:	) id m_value;
 
 -(id) initWithObject:(id) aKey value:(id) aValue;
 

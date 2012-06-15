@@ -103,16 +103,16 @@
 
 }
 
-@property ( nonatomic , retain , getter=getEditLink ,			setter=setEditLink			) NSString *m_editLink;
-@property ( nonatomic , retain , getter=getIdentity ,			setter=setIdentity			) NSString *m_identity;
-@property ( nonatomic , assign , getter=getRelatedLinkCount ,	setter=setRelatedLinkCount	) NSInteger m_relatedLinkCount;
-@property ( nonatomic , retain , getter=getResource ,			setter=setResource			) ODataObject *m_resource;
-@property ( nonatomic , retain , getter=getEditMediaLink ,		setter=setEditMediaLink		) NSString *m_editMediaLink;
-@property ( nonatomic , assign , getter=getMediaLinkEntry ,		setter=setMediaLinkEntry	) BOOL m_mediaLinkEntry;
-@property ( nonatomic , retain , getter=getStreamETag ,			setter=setStreamETag		) NSString *m_streamETag;
-@property ( nonatomic , retain , getter=getEntityTag ,			setter=setEntityTag			) NSString *m_entityTag;
-@property ( nonatomic , retain , getter=getStreamLink,			setter=setStreamLink		) NSString *m_streamLink;
-@property ( nonatomic , retain , getter=getSaveStream ,			setter=setSaveStream		) DataServiceSaveStream *m_saveStream; 
+@property ( nonatomic , retain , getter=getEditLink ,			setter=setEditLink:			) NSString *m_editLink;
+@property ( nonatomic , retain , getter=getIdentity ,			setter=setIdentity:			) NSString *m_identity;
+@property ( nonatomic , assign , getter=getRelatedLinkCount ,	setter=setRelatedLinkCount:	) NSInteger m_relatedLinkCount;
+@property ( nonatomic , retain , getter=getResource ,			setter=setResource:			) ODataObject *m_resource;
+@property ( nonatomic , retain , getter=getEditMediaLink ,		setter=setEditMediaLink:		) NSString *m_editMediaLink;
+@property ( nonatomic , assign , getter=getMediaLinkEntry ,		setter=setMediaLinkEntry:	) BOOL m_mediaLinkEntry;
+@property ( nonatomic , retain , getter=getStreamETag ,			setter=setStreamETag:		) NSString *m_streamETag;
+@property ( nonatomic , retain , getter=getEntityTag ,			setter=setEntityTag:			) NSString *m_entityTag;
+@property ( nonatomic , retain , getter=getStreamLink,			setter=setStreamLink:		) NSString *m_streamLink;
+@property ( nonatomic , retain , getter=getSaveStream ,			setter=setSaveStream:		) DataServiceSaveStream *m_saveStream; 
 
 -(id) initWithIdentity:(NSString*)anIdenity editLink:(NSString*) anEditLink resource:(ODataObject*) anResource;
 -(NSString*) getResourceUri:(NSString*) aBaseUriWithSlash;
