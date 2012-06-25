@@ -116,21 +116,21 @@
 	</xsl:for-each>
 }
 <xsl:for-each select="schema_1_0:Property | schema_1_1:Property | schema_1_2:Property">
-@property ( nonatomic , <xsl:if test="@Type = 'Edm.String'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> ) NSString *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Int32'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Int16'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Int64'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Binary'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSData *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Decimal'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDecimalNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.DateTime'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDate *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.DateTimeOffset'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDate *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Time'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDate *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Single'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDecimalNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Guid'">retain ,  getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSString *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Double'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDecimalNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Byte'">assign , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )Byte m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Boolean'">assign , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )ODataBool *m_</xsl:if>
-<xsl:if test="contains(@Type, $service_namespace)"><xsl:if test="contains(@Type,@ComplexType)"> retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )<xsl:value-of select="$modified_service_namespace"/>_<xsl:value-of select="substring-after(@Type,concat($service_namespace, '.'))"/> *m_</xsl:if></xsl:if>
+@property ( nonatomic , <xsl:if test="@Type = 'Edm.String'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: ) NSString *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Int32'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Int16'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Int64'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Binary'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSData *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Decimal'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDecimalNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.DateTime'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDate *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.DateTimeOffset'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDate *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Time'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDate *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Single'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDecimalNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Guid'">retain ,  getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSString *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Double'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDecimalNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Byte'">assign , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )Byte m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Boolean'">assign , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )ODataBool *m_</xsl:if>
+    <xsl:if test="contains(@Type, $service_namespace)"><xsl:if test="contains(@Type,@ComplexType)"> retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )<xsl:value-of select="$modified_service_namespace"/>_<xsl:value-of select="substring-after(@Type,concat($service_namespace, '.'))"/> *m_</xsl:if></xsl:if>
 <xsl:value-of select="@Name"/>;</xsl:for-each>
 
 @end
@@ -203,25 +203,25 @@
 	</xsl:for-each>
 }
 <xsl:for-each select="schema_1_0:Property | schema_1_1:Property | schema_1_2:Property">
-@property ( nonatomic , <xsl:if test="@Type = 'Edm.String'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> ) NSString *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Int32'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Int16'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Int64'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Binary'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSData *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Decimal'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDecimalNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.DateTime'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDate *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Single'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDecimalNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Guid'">retain ,  getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSString *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Double'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDecimalNumber *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.DateTimeOffset'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDate *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Time'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSDate *m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Byte'">assign , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )Byte m_</xsl:if>
-<xsl:if test="@Type = 'Edm.Boolean'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )ODataBool *m_</xsl:if>
-<xsl:if test="contains(@Type, $service_namespace)"><xsl:if test="contains(@Type,@ComplexType)"> retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )<xsl:value-of select="$modified_service_namespace"/>_<xsl:value-of select="substring-after(@Type,concat($service_namespace, '.'))"/> *m_</xsl:if></xsl:if>
+@property ( nonatomic , <xsl:if test="@Type = 'Edm.String'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: ) NSString *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Int32'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Int16'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Int64'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Binary'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSData *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Decimal'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDecimalNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.DateTime'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDate *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Single'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDecimalNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Guid'">retain ,  getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSString *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Double'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDecimalNumber *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.DateTimeOffset'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDate *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Time'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSDate *m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Byte'">assign , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )Byte m_</xsl:if>
+    <xsl:if test="@Type = 'Edm.Boolean'">retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )ODataBool *m_</xsl:if>
+    <xsl:if test="contains(@Type, $service_namespace)"><xsl:if test="contains(@Type,@ComplexType)"> retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )<xsl:value-of select="$modified_service_namespace"/>_<xsl:value-of select="substring-after(@Type,concat($service_namespace, '.'))"/> *m_</xsl:if></xsl:if>
 <xsl:value-of select="@Name"/>;</xsl:for-each>
 
 <xsl:for-each select="schema_1_0:NavigationProperty | schema_1_1:NavigationProperty | schema_1_2:NavigationProperty">
-@property ( nonatomic , retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/> )NSMutableArray *m_<xsl:value-of select="@Name"/>;</xsl:for-each>
+@property ( nonatomic , retain , getter=get<xsl:value-of select="@Name"/> , setter=set<xsl:value-of select="@Name"/>: )NSMutableArray *m_<xsl:value-of select="@Name"/>;</xsl:for-each>
 
 + (id) Create<xsl:value-of select="@Name"/><xsl:if test="schema_1_0:Property[@Nullable = 'false'] | schema_1_1:Property[@Nullable = 'false'] | schema_1_2:Property[@Nullable = 'false']">With<xsl:for-each select="schema_1_0:Property[@Nullable = 'false'] | schema_1_1:Property[@Nullable = 'false'] | schema_1_2:Property[@Nullable = 'false']"><xsl:value-of select="translate(@Name, $uppercase, $smallcase)"/>:(<xsl:if test="@Type = 'Edm.String'">NSString *</xsl:if><xsl:if test="@Type = 'Edm.Int32'">NSNumber *</xsl:if><xsl:if test="@Type = 'Edm.Int16'">NSNumber *</xsl:if><xsl:if test="@Type = 'Edm.Int64'">NSNumber *</xsl:if>
 <xsl:if test="@Type = 'Edm.Binary'">NSData *</xsl:if>
