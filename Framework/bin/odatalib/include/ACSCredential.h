@@ -22,7 +22,7 @@
 	ACSUtil *m_acsUtil;
 }
 
-@property(nonatomic,retain,getter=getACSUtil,setter=setACSUtil) ACSUtil *m_acsUtil;
+@property(nonatomic,retain,getter=getACSUtil,setter=setACSUtil:) ACSUtil *m_acsUtil;
 
 
 - (id) initWithServiceName:(NSString*) aServiceName wrapName:(NSString*)aWrapName wrapPassword:(NSString*)aWrapPassword 

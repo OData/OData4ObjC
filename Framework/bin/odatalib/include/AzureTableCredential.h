@@ -22,7 +22,7 @@
 	AzureTableUtil *m_azureTableUtil;
 }
 
-@property(nonatomic,retain,getter=getAzureTableUtil,setter=setAzureTableUtil)AzureTableUtil *m_azureTableUtil;
+@property(nonatomic,retain,getter=getAzureTableUtil,setter=setAzureTableUtil:)AzureTableUtil *m_azureTableUtil;
 
 - (id) initWithAccountName:(NSString *)anAccountName accountKey:(NSString *)anAccountKey userPathStyleUrl:(BOOL)anUserPathStyleUrl;
 - (void) setProxy:(HttpProxy*) aProxy;

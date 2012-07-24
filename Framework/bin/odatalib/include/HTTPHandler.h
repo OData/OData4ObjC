@@ -65,7 +65,7 @@
 @property (nonatomic, retain) NSError * http_error;
 @property (nonatomic, assign) NSInteger http_status_code;
 @property (copy) NSMutableDictionary *http_response_headers;
-@property ( nonatomic, assign, getter=getTimeInterval, setter=setTimeInterval) NSTimeInterval timeInterval;
+@property ( nonatomic, assign, getter=getTimeInterval, setter=setTimeInterval:) NSTimeInterval timeInterval;
 
 
 -(void)performHTTPRequest:(NSString *)url username:(NSString *)usr password:(NSString *)pwd headers:(NSMutableDictionary *)dict httpbody:(NSData *)body httpmethod:(NSString *)method;

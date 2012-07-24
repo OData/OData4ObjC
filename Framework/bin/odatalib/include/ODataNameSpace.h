@@ -26,8 +26,8 @@
 	
 }
 
-@property (nonatomic,retain,getter=getNameSpace,	setter=setNameSpace)	NSString *m_nameSpace;
-@property (nonatomic,retain,getter=getNameSpaceURI,	setter=setNameSpaceURI)	NSString *m_nameSpaceURI;
+@property (nonatomic,retain,getter=getNameSpace,	setter=setNameSpace:)	NSString *m_nameSpace;
+@property (nonatomic,retain,getter=getNameSpaceURI,	setter=setNameSpaceURI:)	NSString *m_nameSpaceURI;
 
 -(id) initWithNameSpace:(NSString*) aNameSpace nameSpaceURI:(NSString*)aNameSpaceURI;
 -(BOOL) isDataServiceNameSpace;

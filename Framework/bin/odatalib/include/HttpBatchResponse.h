@@ -26,10 +26,10 @@
     NSString *m_changesetBoundary;
 }
 
-@property(nonatomic, retain,getter=getHttpResponses,setter=setHttpResponses)NSMutableArray *m_httpResponses;
-@property(nonatomic, retain,getter=getRawBatchResponse,setter=setRawBatchResponse)NSString *m_rawHttpBatchResponse;
-@property(nonatomic, retain,getter=getCorrectHttpLine,setter=setCorrectHttpLine)NSString *m_correctHttpLine;
-@property(nonatomic, retain,getter=getChangesetBoundary,setter=setChangesetBoundary) NSString *m_changesetBoundary;
+@property(nonatomic, retain,getter=getHttpResponses,setter=setHttpResponses:)NSMutableArray *m_httpResponses;
+@property(nonatomic, retain,getter=getRawBatchResponse,setter=setRawBatchResponse:)NSString *m_rawHttpBatchResponse;
+@property(nonatomic, retain,getter=getCorrectHttpLine,setter=setCorrectHttpLine:)NSString *m_correctHttpLine;
+@property(nonatomic, retain,getter=getChangesetBoundary,setter=setChangesetBoundary:) NSString *m_changesetBoundary;
 
 -(id) initWithResponses:(NSArray *)httpResponses rawHttpBatchResponse:(NSString *)batchResponse
 changesetBoundary:(NSString *)changesetBoundary;
