@@ -23,7 +23,7 @@
 	QueryOperationResponse *m_response;
 }
 
-@property(nonatomic,retain,getter=getResponse,setter=setResponse)QueryOperationResponse *m_response;
+@property(nonatomic,retain,getter=getResponse,setter=setResponse:)QueryOperationResponse *m_response;
 
 -(id) initWithResponse:(QueryOperationResponse *)aResponse;
 
