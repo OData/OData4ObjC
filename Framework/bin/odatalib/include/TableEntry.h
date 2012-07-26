@@ -31,13 +31,13 @@
 	
 }
 
-@property(nonatomic,retain, getter=getEtag,		setter=setEtag		)NSString *m_OData_etag;
+@property(nonatomic,retain, getter=getEtag,		setter=setEtag:		)NSString *m_OData_etag;
 
-@property(nonatomic,retain, getter=getObjectID,		setter=setObjectID		)NSString *m_OData_obectID;
+@property(nonatomic,retain, getter=getObjectID,		setter=setObjectID:		)NSString *m_OData_obectID;
 
-@property(nonatomic,retain, getter=getPartitionKey, setter=setPartitionKey	)NSString *m_PartitionKey;
-@property(nonatomic,retain, getter=getRowKey,		setter=setRowKey		)NSString *m_RowKey;
-@property(nonatomic,retain, getter=getTimestamp,	setter=setTimestamp		)NSString *m_Timestamp;
+@property(nonatomic,retain, getter=getPartitionKey, setter=setPartitionKey:	)NSString *m_PartitionKey;
+@property(nonatomic,retain, getter=getRowKey,		setter=setRowKey:		)NSString *m_RowKey;
+@property(nonatomic,retain, getter=getTimestamp,	setter=setTimestamp:		)NSString *m_Timestamp;
 
 -(id) initWithUri:(NSString *)anUri;
 

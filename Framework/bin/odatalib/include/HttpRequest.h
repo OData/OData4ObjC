@@ -29,10 +29,10 @@
 }
 
 @property ( nonatomic , retain , getter=getHeaders ) HTTPHeaders *m_httpHeaders;
-@property ( nonatomic , retain , getter=getBody ,			setter=setBody				) NSData *m_httpBody;
-@property ( nonatomic , retain , getter=getMethod ,			setter=setMethod				) NSString *m_httpMethod;
-@property ( nonatomic , retain , getter=getUri ,			setter=setUri				) NSString *m_url;
-@property ( nonatomic , retain , getter=getCredential ,			setter=setCredential				) id m_credential;
+@property ( nonatomic , retain , getter=getBody ,			setter=setBody:				) NSData *m_httpBody;
+@property ( nonatomic , retain , getter=getMethod ,			setter=setMethod:				) NSString *m_httpMethod;
+@property ( nonatomic , retain , getter=getUri ,			setter=setUri:				) NSString *m_url;
+@property ( nonatomic , retain , getter=getCredential ,			setter=setCredential:				) id m_credential;
 
 -(NSString *)getHTMLFriendlyBody;
 - (id) initWithUrl:(NSString*) anURL httpMethod:(NSString*) aHttpMethod credential:(id) aCredential header:(NSDictionary*)aHeader postBody:(NSData*)aPostBody;

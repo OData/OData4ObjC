@@ -21,7 +21,7 @@
 {
 	NSMutableDictionary *m_httpHeaders;
 }
-@property (nonatomic, retain,getter=getHttpHeaders,setter=setHttpHeaders)NSMutableDictionary *m_httpHeaders;
+@property (nonatomic, retain,getter=getHttpHeaders,setter=setHttpHeaders:)NSMutableDictionary *m_httpHeaders;
 
 - (id) initWithHeaders:(NSDictionary*)aHeader; 
 - (void) Add:(id)key valuepair:(id)value;

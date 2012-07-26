@@ -25,7 +25,7 @@
 }
 
 
-@property(nonatomic,retain, getter=getTableName,setter=setTableName	)NSString *m_TableName;
+@property(nonatomic,retain, getter=getTableName,setter=setTableName:	)NSString *m_TableName;
 
 -(id) initWithUri:(NSString *)anUri;
 

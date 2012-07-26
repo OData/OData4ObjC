@@ -22,7 +22,7 @@
 	NSString *m_nextLinkUri;
 }
 
-@property ( nonatomic , retain , getter=getNextLinkUri , setter=setNextLinkUri) NSString * m_nextLinkUri;
+@property ( nonatomic , retain , getter=getNextLinkUri , setter=setNextLinkUri:) NSString * m_nextLinkUri;
 
 - (id) initWithNextLinkURI:(NSString*) aNextLinkUri;
 - (NSString*) toString;
