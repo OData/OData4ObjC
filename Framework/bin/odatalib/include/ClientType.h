@@ -23,11 +23,11 @@
     BOOL					m_hasEPM;
 }
 
-@property ( nonatomic , retain , getter=getAttributes ,				setter=setAttributes			) NSMutableDictionary *m_attributes;
-@property ( nonatomic , retain , getter=getProperties ,				setter=setProperties			) NSMutableDictionary *m_properties;
-@property ( nonatomic , retain , getter=getNavigationProperties ,	setter=setNavigationProperties	) NSMutableDictionary *m_navigationProperties;
-@property ( nonatomic , retain , getter=getRawSortedEPMProperties,	setter=setSortedEPMProperties	) NSMutableDictionary *m_sortedEPMProperties;
-@property ( nonatomic , assign , getter=hasEPM ,					setter=setHasEPM				) BOOL m_hasEPM;
+@property ( nonatomic , retain , getter=getAttributes ,				setter=setAttributes:			) NSMutableDictionary *m_attributes;
+@property ( nonatomic , retain , getter=getProperties ,				setter=setProperties:			) NSMutableDictionary *m_properties;
+@property ( nonatomic , retain , getter=getNavigationProperties ,	setter=setNavigationProperties:	) NSMutableDictionary *m_navigationProperties;
+@property ( nonatomic , retain , getter=getRawSortedEPMProperties,	setter=setSortedEPMProperties:	) NSMutableDictionary *m_sortedEPMProperties;
+@property ( nonatomic , assign , getter=hasEPM ,					setter=setHasEPM:				) BOOL m_hasEPM;
 
 - (id) initWithType:(NSString*)aType;
 

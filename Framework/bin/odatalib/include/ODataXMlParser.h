@@ -44,10 +44,10 @@
 	NSMutableArray   *xmlElements;
 }
 
-@property(nonatomic,assign,getter=getParentElement,setter=setParentElement) ODataXMLElements *parentElement;
-@property(nonatomic,retain,getter=getRootElement,setter=setRootElement) ODataXMLElements *rootElement;
-@property(nonatomic,assign,getter=getTempParentElement,setter=setTempParentElement) ODataXMLElements *tempparentElement;
-@property(nonatomic,retain,getter=getXmlElements,setter=setXmlElements) NSMutableArray   *xmlElements;
+@property(nonatomic,assign,getter=getParentElement,setter=setParentElement:) ODataXMLElements *parentElement;
+@property(nonatomic,retain,getter=getRootElement,setter=setRootElement:) ODataXMLElements *rootElement;
+@property(nonatomic,assign,getter=getTempParentElement,setter=setTempParentElement:) ODataXMLElements *tempparentElement;
+@property(nonatomic,retain,getter=getXmlElements,setter=setXmlElements:) NSMutableArray   *xmlElements;
 
 -(id)init;
 -(ODataXMLElements *)parseData:(NSData *)xmlDocument;

@@ -27,8 +27,8 @@
 	ObjectContext *m_context;
 }
 
-@property (nonatomic, retain,getter=getHTTPRequest, setter=setHTTPRequest)HttpRequest *m_httpRequest;
-@property (nonatomic, assign,getter=getContext, setter=setContext)ObjectContext *m_context;
+@property (nonatomic, retain,getter=getHTTPRequest, setter=setHTTPRequest:)HttpRequest *m_httpRequest;
+@property (nonatomic, assign,getter=getContext, setter=setContext:)ObjectContext *m_context;
 
 -(id)initWithUri:(NSString *)uri batchBoundary:(NSString *)batchBounds batchRequestBody:(NSString *)body 
 	   credentials:(id)credential batchHeaders:(NSMutableDictionary *)headers 

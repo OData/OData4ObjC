@@ -28,7 +28,7 @@
     NSMutableDictionary *m_entries;
 }
 
-@property ( nonatomic , retain , getter=getEntries , setter=setEntries ) NSMutableDictionary *m_entries;
+@property ( nonatomic , retain , getter=getEntries , setter=setEntries: ) NSMutableDictionary *m_entries;
 
 - (id) init;
 

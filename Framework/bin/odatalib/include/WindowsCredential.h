@@ -32,8 +32,8 @@
     NSString *m_password;
 }
 
-@property (nonatomic, retain , getter=getUserName, setter=setUserName )NSString *m_userName;
-@property (nonatomic, retain , getter=getPassword, setter=setPassword )NSString *m_password;
+@property (nonatomic, retain , getter=getUserName, setter=setUserName: )NSString *m_userName;
+@property (nonatomic, retain , getter=getPassword, setter=setPassword: )NSString *m_password;
 
 - (id) initWithUserName:(NSString *)anUserName password:(NSString *)aPassword;
 - (void) setProxy:(HttpProxy*)aProxy;
