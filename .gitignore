@@ -1,10 +1,29 @@
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+
+# Mac OS X
 .DS_Store
-Framework/src/MSODataLib/MSODataLib.xcodeproj/xcuserdata
-Sample/DataMarket/crimeData/ODataSampleApp.xcodeproj/project.xcworkspace/xcuserdata
-Sample/DataMarket/crimeData/ODataSampleApp.xcodeproj/xcuserdata
-Sample/Netflix/netflix/ODataSampleApp.xcodeproj/project.xcworkspace/xcuserdata
-Sample/Netflix/netflix/ODataSampleApp.xcodeproj/xcuserdata
-Sample/OData.org/ODataOrgDemo/ODataOrgDemo.xcodeproj/project.xcworkspace/xcuserdata
-Sample/OData.org/ODataOrgDemo/ODataOrgDemo.xcodeproj/xcuserdata
-Sample/tweet_Sample/ODataSampleApp.xcodeproj/project.xcworkspace/xcuserdata
-Sample/tweet_Sample/ODataSampleApp.xcodeproj/xcuserdata
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+Framework/.DS_Store
+
+.DS_Store
