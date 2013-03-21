@@ -39,7 +39,7 @@
 		else			m_headers			= [[NSMutableDictionary alloc] init];
 		
 		if(anErrorMsg)	[self setInnerException:[NSString stringWithString:anErrorMsg]];
-		else			[self setInnerException:[NSString stringWithString:@""]];
+		else			[self setInnerException:@""];
 		
 		self.m_statusCode						= aStatusCode;
     }

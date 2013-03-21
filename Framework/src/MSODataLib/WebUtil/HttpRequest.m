@@ -56,10 +56,10 @@
 	{
 		
 		if(anURL)		[self setUri:[NSString stringWithString:anURL]];
-		else			[self setUri:[NSString stringWithString:@""]];
+		else			[self setUri:@""];
 		
 		if(aHttpMethod) [self setMethod:[NSString stringWithString:aHttpMethod]];
-		else			[self setMethod:[NSString stringWithString:@""]];
+		else			[self setMethod:@""];
 		
 		if(aCredential) [self setCredential:aCredential];
 		else			[self setCredential:nil];

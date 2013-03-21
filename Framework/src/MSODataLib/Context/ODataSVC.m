@@ -38,11 +38,11 @@
 		if(aHref)
 			[self setHref:aHref];
 		else
-			[self setHref:[NSString stringWithString:@""]];
+			[self setHref:@""];
 		if(aTitle)
 			[self setTitle:aTitle];
 		else
-			[self setTitle:[NSString stringWithString:@""]];
+			[self setTitle:@""];
 	}
 	return self;
 }
@@ -68,7 +68,7 @@
 		if(aTitle)
 			[self setTitle:aTitle];
 		else
-			[self setTitle:[NSString stringWithString:@""]];
+			[self setTitle:@""];
 		
 		if(theCollections)
 			[self setCollections:theCollections];
@@ -111,7 +111,7 @@
 		if(anUrl)
 			[self setBaseUrl:anUrl];
 		else
-			[self setBaseUrl:[NSString stringWithString:@""]];
+			[self setBaseUrl:@""];
 		
 		if(theWorkspaces)
 			[self setWorkspaces:theWorkspaces];

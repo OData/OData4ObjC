@@ -90,7 +90,7 @@
 			[self setEntitySetUrl:[NSString stringWithString:temp]];
 		}
 		else                            
-			[self setEntitySetUrl:[NSString stringWithString:@""]];         
+			[self setEntitySetUrl:@""];
 		
 		[self setContext:anObjectContext];
 	}

@@ -57,8 +57,8 @@
  */
 -(BOOL) isEquals:(RelatedEnd*) aRelatedEndObj1 relatedEndObj2:(RelatedEnd*) aRelatedEndObj2
 {
-	NSString * targetObjectID1	= [NSString stringWithString:@"00000000-0000-0000-0000-000000000000"];
-	NSString * targetObjectID2  = [NSString stringWithString:@"00000000-0000-0000-0000-000000000000"];
+	NSString * targetObjectID1	= @"00000000-0000-0000-0000-000000000000";
+	NSString * targetObjectID2  = @"00000000-0000-0000-0000-000000000000";
 	
 	if([aRelatedEndObj1 getTargetResource] !=nil)
 	{
@@ -84,7 +84,7 @@
  * Returns unique id associated with this RelatedEnd
  */
 -(NSString*) getObjectID {
-	NSString * targetObjectID = [NSString stringWithString:@"00000000-0000-0000-0000-000000000000"];
+	NSString * targetObjectID = @"00000000-0000-0000-0000-000000000000";
 
 	if( m_targetResource != nil)
 	{

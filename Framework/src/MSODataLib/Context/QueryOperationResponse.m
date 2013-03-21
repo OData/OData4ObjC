@@ -64,12 +64,12 @@
 		if(anInnerException)	
 			[self setInnerException:[NSString stringWithString:anInnerException]];
 		else
-			[self setInnerException:[NSString stringWithString:@""]];
+			[self setInnerException:@""];
 			
 		if(aQuery)
 			[self setQuery:[NSString stringWithString:aQuery]];
 		else
-			[self setQuery:[NSString stringWithString:@""]];
+			[self setQuery:@""];
 		
 		[self setObjectIDToNextLinkUrl:[[[NSMutableDictionary alloc] init]autorelease]];
 		self.m_statusCode								= aStatusCode;
