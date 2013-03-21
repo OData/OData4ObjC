@@ -13,6 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		3037413416FB229E003428CB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3037413316FB229E003428CB /* Default-568h@2x.png */; };
 		637FE2F9117C326100F3947C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FE2F8117C326100F3947C /* RootViewController.m */; };
 		637FE47B117C3FB300F3947C /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637FE47A117C3FB300F3947C /* DetailsViewController.m */; };
 		7CCFA6BA132B24120083AEEF /* libMSODataLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCFA6B9132B240E0083AEEF /* libMSODataLib.a */; };
@@ -45,6 +46,7 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3037413316FB229E003428CB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ODataSampleApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODataSampleApp_Prefix.pch; sourceTree = "<group>"; };
 		637FE2F7117C326100F3947C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		637FE2F8117C326100F3947C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				3037413316FB229E003428CB /* Default-568h@2x.png */,
 				7CCFA6AF132B240D0083AEEF /* MSODataLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				3037413416FB229E003428CB /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +255,7 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ODataSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ODataSampleApp;
@@ -267,7 +272,7 @@
 				GCC_PREFIX_HEADER = ODataSampleApp_Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../Framework/bin/odatalib/include\"/**";
 				INFOPLIST_FILE = "ODataSampleApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Framework/bin/odatalib/lib/iPhoneSimulatorLibs/iPhone_Simulator_4.0/Debug\"",
@@ -294,6 +299,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../Framework/src/MSODataLib//**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../Framework/src/MSODataLib/build/Debug-iphoneos";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -308,6 +314,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};

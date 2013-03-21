@@ -27,16 +27,16 @@
 
 	RootViewController *rootViewController = [[RootViewController alloc] initWithStyle:UITableViewStylePlain];
 	navigationController=[[UINavigationController alloc]initWithRootViewController:rootViewController];
-	[window addSubview:[navigationController view]];
+	[self.window setRootViewController:navigationController];
 	[rootViewController release];
     // Override point for customization after application launch
-    [window makeKeyAndVisible];
+    [self.window makeKeyAndVisible];
 }
 
 
 - (void)dealloc {
     [navigationController release];	
-	[window release];	
+	[self.window release];
     [super dealloc];
 }
 

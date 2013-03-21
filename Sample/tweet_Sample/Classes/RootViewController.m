@@ -538,7 +538,7 @@
 		//[self testNorthwindEntities];
 		//[self expandQuery];
 		//[self testForCommentInTweets];
-		//[self testTweetsCount];
+		[self testTweetsCount];
 		//[self testMixResProcessor];
 		//[self  chkNameSpaceProblem];	
 		//[self testDeltaForNorthwindEntities];
