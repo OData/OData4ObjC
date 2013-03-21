@@ -35,7 +35,6 @@
 + (NSString*) TimeInISO8601;
 + (BOOL) IsAbsoluteUrl:(NSString*)anUrl;
 + (NSMutableDictionary*)CreateHeaders:(NSString*)aMethodType eTag:(NSString*)aETag ODataServiceVersion:(NSString *)dataserviceversion;
-+ (NSString*) getEntitySetFromUrl:(NSString*) anUri;
 
 + (NSString *) URLEncode:(NSString *) aString;
 + (NSString *) URLDecode:(NSString *) aString;

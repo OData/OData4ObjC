@@ -36,7 +36,6 @@
 - (void) add:(id)aKey value:(id) aValue;
 
 - (BOOL) remove:(id)aKey;
-- (BOOL) remove:(id)aKey;
 - (void) removeAll;
 
 - (BOOL) containsKey:(id) aKey;
