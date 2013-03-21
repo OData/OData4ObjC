@@ -19,7 +19,7 @@
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
 #include <string.h>
-#include<stdio.h>
+#include <stdio.h>
 #include <libxml/xmlmemory.h>
 #include <libxml/debugXML.h>
 #include <libxml/HTMLtree.h>

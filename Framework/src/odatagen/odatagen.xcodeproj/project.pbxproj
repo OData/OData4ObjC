@@ -188,7 +188,11 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = odatagen_Prefix.pch;
-				HEADER_SEARCH_PATHS = /Developer/SDKs/MacOSX10.6.sdk/usr/include/libxml2;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include/libxml2,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -207,7 +211,11 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = odatagen_Prefix.pch;
-				HEADER_SEARCH_PATHS = /Developer/SDKs/MacOSX10.6.sdk/usr/include/libxml2;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include/libxml2,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INSTALL_PATH = /usr/local/bin;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -228,7 +236,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /Developer/SDKs/MacOSX10.5.sdk/usr/include;
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -244,7 +252,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /Developer/SDKs/MacOSX10.5.sdk/usr/include;
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.7;
 				USER_HEADER_SEARCH_PATHS = "";
