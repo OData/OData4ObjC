@@ -1,3 +1,8 @@
+This project is no longer active and was put into the Outercurve Project Archive on 26-09-2013. The last release of the software is still available at <a href="https://odataobjc.codeplex.com/releases/view/73025">https://odataobjc.codeplex.com/releases/view/73025</a> and the software repositories are still readable at <a href="https://github.com/OData/OData4ObjC">https://github.com/OData/OData4ObjC</a>, but further work has been suspended at this time. Please contact the Outercurve Foundation at <a href="mailto:info@outercurve.org">info@outercurve.org</a> if you require more information.</strong>
+
+-----------------------------
+
+
 Usage Instructions
 ==================
 
